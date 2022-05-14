@@ -1,0 +1,122 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+    --ifm-color-primary: #6695c5;
+    --ifm-color-primary-dark: #9da1b3;
+    --ifm-color-primary-darker: #606583;
+    --ifm-color-primary-darkest: #0a1341;
+    --ifm-color-primary-light: #0094cd;
+    --ifm-color-primary-lighter: #59b9de;
+    --ifm-color-primary-lightest: #99d4eb;
+    --ifm-navbar-height: 70px;
+}
+
+:root[data-theme='light'] {
+    --ifm-navbar-link-color: #ffffff;
+    --ifm-navbar-link-hover-color: #67bfd8;
+    --ifm-navbar-background-color: #004f9f;
+    --ifm-menu-color: #d9e5f1;
+    --ifm-menu-color-active: #ffffff;
+    --ifm-menu-color-hover: #ffffff;
+    --ifm-menu-color-background: transparent;
+    --ifm-menu-color-background-active: #214964;
+    --ifm-menu-color-background-hover: #606583;
+    --ifm-sidebar-background-color: #0a1341;
+    --ifm-footer-background-color: #0a1341;
+    --ifm-footer-padding-vertical: 5px;
+    --ifm-navbar-item-padding-horizontal: 10px;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+    --ifm-color-primary: #25c2a0;
+    --ifm-color-primary-dark: #21af90;
+    --ifm-color-primary-darker: #1fa588;
+    --ifm-color-primary-darkest: #1a8870;
+    --ifm-color-primary-light: #29d5b0;
+    --ifm-color-primary-lighter: #32d8b4;
+    --ifm-color-primary-lightest: #4fddbf;
+}
+
+:root[data-theme='light'] .navbar-sidebar {
+    --ifm-menu-color: #ffffff;
+}
+
+:root[data-theme='light'] .menu {
+    background: var(--ifm-sidebar-background-color);
+}
+
+:root[data-theme='light'] .navbar-sidebar .menu {
+    background: none;
+}
+
+:root .menu__list-item--collapsed .menu__link--sublist::after {
+    border-color: var(--ifm-menu-color);
+}
+
+:root[data-theme='light'] .menu__list-item--collapsed .menu__link--sublist::after {
+    border-color: var(--ifm-menu-color);
+}
+
+.docusaurus-highlight-code-line {
+    background-color: rgba(0, 0, 0, 3);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
+}
+
+[data-theme='dark'] .docusaurus-highlight-code-line {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] body {
+    background-color: rgba(247, 249, 252, 0);
+}
+
+header{
+    background-color: #d9e5f1;
+}
+/*[data-theme='light'] .DocSearch {*/
+/*    !* --docsearch-primary-color: var(--ifm-color-primary); *!*/
+/*    !* --docsearch-text-color: var(--ifm-font-color-base); *!*/
+/*    --docsearch-muted-color: var(--ifm-color-secondary-darkest);*/
+/*    --docsearch-container-background: rgba(94, 100, 112, 0.7);*/
+/*    !* Modal *!*/
+/*    --docsearch-modal-background: var(--ifm-color-secondary-lighter);*/
+/*    !* Search box *!*/
+/*    --docsearch-searchbox-background: var(--ifm-color-secondary);*/
+/*    --docsearch-searchbox-focus-background: var(--ifm-color-white);*/
+/*    !* Hit *!*/
+/*    --docsearch-hit-color: var(--ifm-font-color-base);*/
+/*    --docsearch-hit-active-color: var(--ifm-color-white);*/
+/*    --docsearch-hit-background: var(--ifm-color-white);*/
+/*    !* Footer *!*/
+/*    --docsearch-footer-background: var(--ifm-color-white);*/
+/*}*/
+
+/*[data-theme='dark'] .DocSearch {*/
+/*    --docsearch-text-color: var(--ifm-font-color-base);*/
+/*    --docsearch-muted-color: var(--ifm-color-secondary-darkest);*/
+/*    --docsearch-container-background: rgba(47, 55, 69, 0.7);*/
+/*    !* Modal *!*/
+/*    --docsearch-modal-background: var(--ifm-background-color);*/
+/*    !* Search box *!*/
+/*    --docsearch-searchbox-background: var(--ifm-background-color);*/
+/*    --docsearch-searchbox-focus-background: var(--ifm-color-black);*/
+/*    !* Hit *!*/
+/*    --docsearch-hit-color: var(--ifm-font-color-base);*/
+/*    --docsearch-hit-active-color: var(--ifm-color-white);*/
+/*    --docsearch-hit-background: var(--ifm-color-emphasis-100);*/
+/*    !* Footer *!*/
+/*    --docsearch-footer-background: var(--ifm-background-surface-color);*/
+/*    --docsearch-key-gradient: linear-gradient(*/
+/*            -26.5deg,*/
+/*            var(--ifm-color-emphasis-200) 0%,*/
+/*            var(--ifm-color-emphasis-100) 100%*/
+/*    );*/
+/*}*/

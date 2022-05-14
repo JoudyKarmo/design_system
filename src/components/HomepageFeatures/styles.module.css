@@ -1,0 +1,41 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  color: black;
+}
+
+.featureSvg {
+  height: 100px;
+  width: 200px;
+  /*color: #00a4db;*/
+}
+.heading {
+font-size: 2px;
+  /*color: #00a4db;*/
+}
+.main{
+  color: #00a4db;
+  /*font-size: 2px;*/
+}
+.red {
+  color: red;
+}
+.red[aria-selected='true'] {
+  border-bottom-color: red;
+}
+
+.orange {
+  color: orange;
+}
+.orange[aria-selected='true'] {
+  border-bottom-color: orange;
+}
+
+.yellow {
+  color: yellow;
+}
+.yellow[aria-selected='true'] {
+  border-bottom-color: yellow;
+}
