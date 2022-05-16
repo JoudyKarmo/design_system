@@ -10,13 +10,13 @@ module.exports = {
     // tagline: 'Design, build, and ship coherent\n' +
     //     'experiences with the USU design system.',
     // url: 'https://your-docusaurus-test-site.com',
-    url: 'http://192.168.0.6:3000',
-    baseUrl: '/',
+    url: 'https://JoudyKarmo.github.io',
+    baseUrl: '/design_system/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
-    organizationName: 'facebook', // Usually your GitHub org/user name.
-    projectName: 'docusaurus', // Usually your repo name.
+    organizationName: 'JoudyKarmo', // Usually your GitHub org/user name.
+    projectName: 'design_system', // Usually your repo name.
 
     presets: [
         [
@@ -39,6 +39,7 @@ module.exports = {
                 // },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
+                    themes: ['@docusaurus/theme-live-codeblock'],
                 },
             }),
         ],
@@ -150,7 +151,8 @@ module.exports = {
                     items: [
                         {
                             label: 'Privacy',
-                            to: '/Privacy'
+                            // to: '/Privacy'
+                            href: 'https://github.com/JoudyKarmo/design_system'
                         },
                     ],
                 },
@@ -163,15 +165,16 @@ module.exports = {
                         // },
                         {
                             label: 'License',
-                            to: '/License'
-                            // href: 'https://github.com/facebook/docusaurus',
+                            // to: '/License',
+                            href: 'https://github.com/JoudyKarmo/design_system'
                         },
                     ],
                 }, {
                     items: [
                         {
                             label: 'Career',
-                            to: '/Career'
+                            // to: '/Career',
+                            href: 'https://github.com/JoudyKarmo/design_system'
                         },
                     ],
                 },
@@ -185,5 +188,26 @@ module.exports = {
 
     },
 };
-
+// ```jsx live
+// function Clock(props) {
+//   const [date, setDate] = useState(new Date());
+//   useEffect(() => {
+//     var timerID = setInterval(() => tick(), 1000);
+//
+//     return function cleanup() {
+//       clearInterval(timerID);
+//     };
+//   });
+//
+//   function tick() {
+//     setDate(new Date());
+//   }
+//
+//   return (
+//     <div>
+//       <h2>It is {date.toLocaleTimeString()}.</h2>
+//     </div>
+//   );
+// }
+// ```
 // module.exports = config;

@@ -78,9 +78,31 @@
     background-color: rgba(247, 249, 252, 0);
 }
 
-header{
-    background-color: #d9e5f1;
+/*img[alt=drawing] {*/
+/*    width: 350px;*/
+/*    padding-bottom: 15px;*/
+
+/*    !*margin-right: 100px;*!*/
+/*    margin-left: 500px;*/
+/*}*/
+img[alt=draws] {
+    width: 350px;
+    /*padding-bottom: 15px;*/
+    /*margin-right: 60px;*/
+    margin-left: 455px;
 }
+
+img[alt=draw] {
+    width: 350px;
+    /*padding-bottom: 15px;*/
+    margin-right: 60px;
+    margin-left: 20px;
+}
+
+/*header {*/
+/*    background-color: #d9e5f1;*/
+/*}*/
+
 /*[data-theme='light'] .DocSearch {*/
 /*    !* --docsearch-primary-color: var(--ifm-color-primary); *!*/
 /*    !* --docsearch-text-color: var(--ifm-font-color-base); *!*/

@@ -34,7 +34,7 @@ automatically after 5 seconds.
 3. Actions (optional): A maximum of two links that enable users to act on the Toast Message content.
 4. Dismiss: Use to close the Toast message. This is for default Toast messages only.
 
-![Anatomy](/img/Toast.png)
+![Anatomy](/img/toast-messages-screenshots/explainer-teaser.png)
 
 ## Rules / Best practice
 
@@ -63,7 +63,7 @@ of the icon.
 
 ### Information
 
-![Anatomy](/img/Info.png)
+![Anatomy](/img/toast-messages-screenshots/Toast-Message-Information.png)
 
 * Say why it's important.
 * Get right to the point.
@@ -71,21 +71,21 @@ of the icon.
 
 ### Success
 
-![Anatomy](/img/Success.png)
+![Anatomy](/img/toast-messages-screenshots/Toast-Message-Success.png)
 
 * Messages that appear more frequently should have less wink and be more concise.
 * Messages that appear after a bigger or more infrequent action can be more playful.
 
 ### Warning
 
-![Anatomy](/img/Warning.png)
+![Anatomy](/img/toast-messages-screenshots/Toast-Message-Warning.png)
 
 * Put yourself in the user's shoes.
 * Make sure you're not talking about something that has already occurred (this should be an error message instead).
 
 ### Error
 
-![Anatomy](/img/Error.png)
+![Anatomy](/img/toast-messages-screenshots/Toast-Message-Error.png)
 
 * Avoid blame and accept if something is our fault - "we're having trouble connecting" rather than "you're having
   connection issues."
@@ -125,6 +125,15 @@ See [**here**](https://docusaurus.io/) or [**there**](https://docusaurus.io/)
 
 The default toast message type includes a dismiss button. All toast messages require a  *`title`*  and an  *`icon`* . Make sure the icon and color match the intent of your message, such as warning, error, information, or success. Toast messages are often used within a toast group.
 
+![draw](/img/toast-messages-screenshots/Toast-Message-Information.png) ![draw](/img/toast-messages-screenshots/Toast-Message-Warning.png)
+
+![draws](/img/toast-messages-screenshots/Toast-Message-Success.png)
+
+![draws](/img/toast-messages-screenshots/Toast-Message-Error.png)
+
+
+
+
 ## Actions
 
 Use  *`actions`*  to show a clickable action at the bottom of the toast message. For toast messages where the appearance
@@ -138,7 +147,7 @@ is  *`normal`* , the action will show as a link. For all other appearances the a
 
 #### Javascript
 
-```
+``` js
 <!-- Info (Default) Toast -->
 <usu-toast 
     header="Info Message Title" 
@@ -169,7 +178,7 @@ is  *`normal`* , the action will show as a link. For all other appearances the a
 
 #### Angular
 
-```
+``` html
 <!-- The UsuToastService usage of the usu-toast-container should be prefered to the direct component usage -->
 
 <!-- Success toast -->
@@ -203,7 +212,7 @@ is  *`normal`* , the action will show as a link. For all other appearances the a
 
 #### React
 
-```
+``` html
 <UsuToast
  status='error'
   header='Error Message Title'
