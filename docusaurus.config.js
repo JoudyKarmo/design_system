@@ -11,7 +11,7 @@ module.exports = {
     // tagline: 'Design, build, and ship coherent\n' +
     //     'experiences with the USU design system.',
     // url: 'https://your-docusaurus-test-site.com',
-    url: 'https://JoudyKarmo.github.io',
+    url: 'elaborate-mousse-ce89c2.netlify.app',
     baseUrl: '/design_system/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
