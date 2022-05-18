@@ -5,10 +5,6 @@ title: Toast-Message
 sidebar_label: Toast Message
 ---
 
-import {UsuButton, UsuToast} from '@usu/react-components'
-
-<UsuButton>Test</UsuButton>
-
 # Toast Messages
 
 This is a description about the Toast Message Component
@@ -40,12 +36,6 @@ automatically after 5 seconds.
 
 ![Anatomy](/img/toast-messages-screenshots/explainer-teaser.png)
 
-<UsuToast
-status='error'
-header='Error Message Title'
-message='Descriptive Message Text for this Error'
-/>
-
 ## Rules / Best practice
 
 In general, there are four possible types of messages: info, success, warning and error.    
@@ -73,7 +63,13 @@ of the icon.
 
 ### Information
 
-![Anatomy](/img/toast-messages-screenshots/Toast-Message-Information.png)
+[//]: # (![Anatomy]&#40;/img/toast-messages-screenshots/Toast-Message-Information.png&#41;)
+
+<UsuToast
+status='info'
+header='Information Message Title'
+message='Descriptive Message Text for this Information'
+/>
 
 * Say why it's important.
 * Get right to the point.
@@ -81,21 +77,39 @@ of the icon.
 
 ### Success
 
-![Anatomy](/img/toast-messages-screenshots/Toast-Message-Success.png)
+[//]: # (![Anatomy]&#40;/img/toast-messages-screenshots/Toast-Message-Success.png&#41;)
+
+<UsuToast
+status='success'
+header='Success Message Title'
+message='Descriptive Message Text for this Success'
+/>
 
 * Messages that appear more frequently should have less wink and be more concise.
 * Messages that appear after a bigger or more infrequent action can be more playful.
 
 ### Warning
 
-![Anatomy](/img/toast-messages-screenshots/Toast-Message-Warning.png)
+[//]: # (![Anatomy]&#40;/img/toast-messages-screenshots/Toast-Message-Warning.png&#41;)
+
+<UsuToast
+status='warning'
+header='Warning Message Title'
+message='Descriptive Message Text for this Warning'
+/>
 
 * Put yourself in the user's shoes.
 * Make sure you're not talking about something that has already occurred (this should be an error message instead).
 
 ### Error
 
-![Anatomy](/img/toast-messages-screenshots/Toast-Message-Error.png)
+[//]: # (![Anatomy]&#40;/img/toast-messages-screenshots/Toast-Message-Error.png&#41;)
+
+<UsuToast
+status='error'
+header='Error Message Title'
+message='Descriptive Message Text for this Error'
+/>
 
 * Avoid blame and accept if something is our fault - "we're having trouble connecting" rather than "you're having
   connection issues."
@@ -157,7 +171,7 @@ is  *`normal`* , the action will show as a link. For all other appearances the a
 <Tabs>
   <TabItem value="bright" label="Javascript">
 
-``` js showLineNumbers live=true
+``` js showLineNumbers live
 <!-- Info (Default) Toast -->
 <usu-toast 
     header="Info Message Title" 
@@ -224,7 +238,7 @@ message="Descriptive Message Text for this Warning"
   </TabItem>
   <TabItem value="reflection" label="React">
 
-``` JavaScript showLineNumbers live=true
+``` JavaScript showLineNumbers live
 function Clock(props) {
   const [date, setDate] = useState(new Date());
   useEffect(() => {
@@ -251,187 +265,37 @@ return (
   </TabItem>
 </Tabs>
 
-[//]: # (#### Javascript)
-
-[//]: # (``` js showLineNumbers live=true)
-
-[//]: # (<!-- Info &#40;Default&#41; Toast -->)
-
-[//]: # (<usu-toast )
-
-[//]: # (    header="Info Message Title" )
-
-[//]: # (    message="Descriptive Message Text for this Info")
-
-[//]: # (></usu-toast>)
-
-[//]: # ()
-
-[//]: # (<!-- Error Toast -->)
-
-[//]: # (<usu-toast)
-
-[//]: # (status="error")
-
-[//]: # (header="Error Message Title")
-
-[//]: # (message="Descriptive Message Text for this Error")
-
-[//]: # (></usu-toast>)
-
-[//]: # ()
-
-[//]: # (<!-- Success Toast -->)
-
-[//]: # (<usu-toast)
-
-[//]: # (status="success")
-
-[//]: # (header="Success Message Title")
-
-[//]: # (message="Descriptive Message Text for this Success")
-
-[//]: # (></usu-toast>)
-
-[//]: # ()
-
-[//]: # (<!-- Warning Toast -->)
-
-[//]: # (<usu-toast)
-
-[//]: # (status="warning")
-
-[//]: # (header="Warning Message Title")
-
-[//]: # (message="Descriptive Message Text for this Warning")
-
-[//]: # (></usu-toast>)
-
-[//]: # (```)
-
-[//]: # (#### Angular)
-
-[//]: # (``` html showLineNumbers live)
-
-[//]: # (<!-- The UsuToastService usage of the usu-toast-container should be prefered to the direct component usage -->)
-
-[//]: # ()
-
-[//]: # (<!-- Success toast -->)
-
-[//]: # (<usu-toast)
-
-[//]: # ( status="success")
-
-[//]: # (  header="Success Message Title")
-
-[//]: # (  message="Descriptive Message Text for this success")
-
-[//]: # (></usu-toast>)
-
-[//]: # ()
-
-[//]: # (<!-- Info toast -->)
-
-[//]: # (<usu-toast)
-
-[//]: # (  status="info")
-
-[//]: # (  header="Info Message Title")
-
-[//]: # (  message="Descriptive Message Text for this information")
-
-[//]: # (></usu-toast>)
-
-[//]: # ()
-
-[//]: # (<!-- Warning toast -->)
-
-[//]: # (<usu-toast)
-
-[//]: # (  status="warning")
-
-[//]: # (  header="Warning Message Title")
-
-[//]: # (  message="Descriptive Message Text for this warning")
-
-[//]: # (></usu-toast>)
-
-[//]: # ()
-
-[//]: # (<!-- Error toast -->)
-
-[//]: # (<usu-toast)
-
-[//]: # (  status="error")
-
-[//]: # (  header="Error Message Title")
-
-[//]: # (  message="Descriptive Message Text for this error")
-
-[//]: # (></usu-toast>)
-
-[//]: # (```)
-
-[//]: # (#### React)
-
-[//]: # (``` live=true)
-
-[//]: # (function Clock&#40;props&#41; {)
-
-[//]: # (  const [date, setDate] = useState&#40;new Date&#40;&#41;&#41;;)
-
-[//]: # (  useEffect&#40;&#40;&#41; => {)
-
-[//]: # (    var timerID = setInterval&#40;&#40;&#41; => tick&#40;&#41;, 1000&#41;;)
-
-[//]: # ()
-
-[//]: # (    return function cleanup&#40;&#41; {)
-
-[//]: # (      clearInterval&#40;timerID&#41;;)
-
-[//]: # (    };)
-
-[//]: # (  }&#41;;)
-
-[//]: # ()
-
-[//]: # (  function tick&#40;&#41; {)
-
-[//]: # (    setDate&#40;new Date&#40;&#41;&#41;;)
-
-[//]: # (  })
-
-[//]: # ()
-
-[//]: # (  return &#40;)
-
-[//]: # (    <div>)
-
-[//]: # (      <h2>It is {date.toLocaleTimeString&#40;&#41;}.</h2>)
-
-[//]: # (    </div>)
-
-[//]: # (  &#41;;)
-
-[//]: # (})
-
-[//]: # (```)
-
 **Changelog**
 
-<button class="my-button button bordered" style={{
+[//]: # (<button class="my-button button bordered" style={{)
+
+[//]: # (backgroundColor: 'white',)
+
+[//]: # (border: 'thin solid purple',)
+
+[//]: # (borderRadius: 4 + 1 +'px',)
+
+[//]: # (padding: 0 + 8 + 'px',)
+
+[//]: # (marginLeft: 0 + 0 + '86%',)
+
+[//]: # (fontSize: '15px',)
+
+[//]: # (color: 'Purple',)
+
+[//]: # (}}>)
+
+[//]: # (View Changelog)
+
+[//]: # (</button>)
+
+import {UsuButton, UsuToast} from '@usu/react-components'
+
+<UsuButton style={{
 backgroundColor: 'white',
-border: 'thin solid purple',
-borderRadius: 4 + 1 +'px',
-padding: 0 + 8 + 'px',
-marginLeft: 0 + 0 + '86%',
-fontSize: '15px',
-color: 'Purple',
-}}>
-View Changelog
-</button>
+padding: 0 + 0 + 'px',
+marginLeft: 0 + 0 + '80%',
+}}>View Changelog</UsuButton>
 
 **1.1.7**   
 Patch Changes:

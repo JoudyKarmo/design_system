@@ -72,6 +72,7 @@ module.exports = {
         ],
     ],
     plugins: ['@docusaurus/theme-live-codeblock'],
+    plugins: [require.resolve('docusaurus-lunr-search')],
     themeConfig: {
 
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -148,65 +149,23 @@ module.exports = {
         //     searchPagePath: 'search',
         // },
         footer: {
-            // style: 'dark',
             links: [
-                // {
-                //     title: 'Docs',
-                //     items: [
-                //       {
-                //         label: 'Tutorial',
-                //         to: '/',
-                //       },
-                //     ],
-                //   },
-                //   {
-                // title: 'Community',
-                // items: [
-                //   {
-                //     label: 'Stack Overflow',
-                //     href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                //   },
-                //   {
-                //     label: 'Discord',
-                //     href: 'https://discordapp.com/invite/docusaurus',
-                //   },
-                //   {
-                //     label: 'Twitter',
-                //     href: 'https://twitter.com/docusaurus',
-                //   },
-                // ],
-                // },
+                {
+                    label: 'Privacy',
+                    // to: '/Privacy'
+                    href: 'https://github.com/JoudyKarmo/design_system'
+                },
 
                 {
-                    items: [
-                        {
-                            label: 'Privacy',
-                            // to: '/Privacy'
-                            href: 'https://github.com/JoudyKarmo/design_system'
-                        },
-                    ],
+                    label: 'License',
+                    // to: '/License',
+                    href: 'https://github.com/JoudyKarmo/design_system'
                 },
+
                 {
-                    // title: 'Career',
-                    items: [
-                        // {
-                        //   label: 'Blog',
-                        //   to: '/blog',
-                        // },
-                        {
-                            label: 'License',
-                            // to: '/License',
-                            href: 'https://github.com/JoudyKarmo/design_system'
-                        },
-                    ],
-                }, {
-                    items: [
-                        {
-                            label: 'Career',
-                            // to: '/Career',
-                            href: 'https://github.com/JoudyKarmo/design_system'
-                        },
-                    ],
+                    label: 'Career',
+                    // to: '/Career',
+                    href: 'https://github.com/JoudyKarmo/design_system'
                 },
             ],
             copyright: `© USU GmbH ${new Date().getFullYear()}`,
@@ -216,7 +175,6 @@ module.exports = {
             darkTheme: darkCodeTheme,
             // additionalLanguages: ['react']
         },
-
     },
 };
 // module.exports = config;

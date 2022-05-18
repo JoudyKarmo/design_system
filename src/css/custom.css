@@ -102,17 +102,35 @@ img[alt=draw] {
 img[alt=drawing] {
     width: 40px;
 }
+
 img[alt=drawings] {
     width: 50px;
 }
+
 img[alt=Section] {
     width: 250px;
     margin-right: 10px;
 }
+
 img[alt=Sections] {
     width: 250px;
     margin-right: 10px;
 }
+
+.footer {
+    padding-top: 15px;
+    color: white;
+    /*margin-top: revert;*/
+    /*position: initial;*/
+}
+.footer__link-item{
+    /*padding-top: 10px;*/
+    color: white;
+    position: center;
+  opacity: initial;
+    margin: 25px;
+}
+
 /*header {*/
 /*    background-color: #d9e5f1;*/
 /*}*/
