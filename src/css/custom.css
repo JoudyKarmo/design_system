@@ -99,6 +99,20 @@ img[alt=draw] {
     margin-left: 20px;
 }
 
+img[alt=drawing] {
+    width: 40px;
+}
+img[alt=drawings] {
+    width: 50px;
+}
+img[alt=Section] {
+    width: 250px;
+    margin-right: 10px;
+}
+img[alt=Sections] {
+    width: 250px;
+    margin-right: 10px;
+}
 /*header {*/
 /*    background-color: #d9e5f1;*/
 /*}*/

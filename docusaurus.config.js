@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const themeLiveCodeblock = require("@docusaurus/theme-live-codeblock/lib");
 
 /** @type {import('@docusaurus/types').Config} */
 module.exports = {
@@ -30,6 +31,18 @@ module.exports = {
                     editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                     breadcrumbs: true,
                 },
+                // i18n: {
+                //     defaultLocale: 'en',
+                //     // eslint-disable-next-line no-nested-ternary
+                //     locales: isDeployPreview
+                //         ? // Deploy preview: keep it fast!
+                //         ['en']
+                //         : isI18nStaging
+                //             ? // Staging locales: https://docusaurus-i18n-staging.netlify.app/
+                //             ['en', 'ja']
+                //             : // Production locales
+                //             ['en', 'fr', 'pt-BR', 'ko', 'zh-CN'],
+                // },
                 blog: false,
                 // blog: {
                 //   showReadingTime: true,
@@ -39,16 +52,33 @@ module.exports = {
                 // },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
-                    themes: ['@docusaurus/theme-live-codeblock'],
+                    themes: [
+                        // ... Your other themes.
+                        [
+                            require.resolve("@easyops-cn/docusaurus-search-local"),
+                            {
+                                // ... Your options.
+                                // `hashed` is recommended as long-term-cache of index file is possible.
+                                hashed: true,
+                                // For Docs using Chinese, The `language` is recommended to set to:
+                                // ```
+                                // language: ["en", "zh"],
+                                // ```
+                            },
+                        ],
+                    ],
                 },
             }),
         ],
     ],
-
+    plugins: ['@docusaurus/theme-live-codeblock'],
     themeConfig: {
 
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 
+        liveCodeBlock: {
+            playgroundPosition: 'bottom',
+        },
         navbar: {
             // title: 'All About One USU',
             //  style: 'dark',
@@ -107,20 +137,20 @@ module.exports = {
                 // },
             ],
         },
-         algolia: {
-            apiKey: '04da223dad67e93f54a5a322e281ed8e',
-            indexName: 'Design_System',
-            contextualSearch: true,
-            placeholder: 'Search in my website',
-            appId: 'QSM0A4J6E0',
-            externalUrlRegex: 'external\\.com|domain\\.com',
-            searchParameters: {facetFilters: ['language:en', ['filter1', 'filter2'], 'filter3'],},
-            searchPagePath: 'search',
-        },
+        // algolia: {
+        //     apiKey: '04da223dad67e93f54a5a322e281ed8e',
+        //     indexName: 'Design_System',
+        //     contextualSearch: true,
+        //     placeholder: 'Search in my website',
+        //     appId: 'QSM0A4J6E0',
+        //     externalUrlRegex: 'external\\.com|domain\\.com',
+        //     searchParameters: {facetFilters: ['language:en', ['filter1', 'filter2'], 'filter3'],},
+        //     searchPagePath: 'search',
+        // },
         footer: {
             // style: 'dark',
             links: [
-                  // {
+                // {
                 //     title: 'Docs',
                 //     items: [
                 //       {
@@ -184,30 +214,9 @@ module.exports = {
         prism: {
             theme: lightCodeTheme,
             darkTheme: darkCodeTheme,
+            // additionalLanguages: ['react']
         },
 
     },
 };
-// ```jsx live
-// function Clock(props) {
-//   const [date, setDate] = useState(new Date());
-//   useEffect(() => {
-//     var timerID = setInterval(() => tick(), 1000);
-//
-//     return function cleanup() {
-//       clearInterval(timerID);
-//     };
-//   });
-//
-//   function tick() {
-//     setDate(new Date());
-//   }
-//
-//   return (
-//     <div>
-//       <h2>It is {date.toLocaleTimeString()}.</h2>
-//     </div>
-//   );
-// }
-// ```
 // module.exports = config;

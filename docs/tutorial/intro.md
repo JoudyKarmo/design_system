@@ -27,7 +27,7 @@ This is a description about the Toast Message Component
 3. Actions (optional): A maximum of two links that enable users to act on the Toast Message content.
 4. Dismiss: Use to close the Toast message. This is for default Toast messages only.
 
-![Anatomy](/img/Toast.png)
+[//]: # (![Anatomy]&#40;/img/Toast.png&#41;)
 
 ## Rules / Best practice
 
@@ -52,7 +52,7 @@ instead of the icon.
 
 ### Information
 
-![Anatomy](/img/Info.png)
+[//]: # (![Anatomy]&#40;/img/Info.png&#41;)
 
 * Say why it's important.
 * Get right to the point.
@@ -60,21 +60,21 @@ instead of the icon.
 
 ### Success
 
-![Anatomy](/img/Success.png)
+[//]: # (![Anatomy]&#40;/img/Success.png&#41;)
 
 * Messages that appear more frequently should have less wink and be more concise.
 * Messages that appear after a bigger or more infrequent action can be more playful.
 
 ### Warning
 
-![Anatomy](/img/Warning.png)
+[//]: # (![Anatomy]&#40;/img/Warning.png&#41;)
 
 * Put yourself in the user's shoes.
 * Make sure you're not talking about something that has already occurred (this should be an error message instead).
 
 ### Error
 
-![Anatomy](/img/Error.png)
+[//]: # (![Anatomy]&#40;/img/Error.png&#41;)
 
 * Avoid blame and accept if something is our fault - "we're having trouble connecting" rather than "you're having
   connection issues."
