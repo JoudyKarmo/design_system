@@ -51,7 +51,7 @@ module.exports = {
                 //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                 // },
                 theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
+                    customCss: [require.resolve('./src/css/custom.css'),require.resolve('./src/css/usu-icons.css')],
                     themes: [
                         // ... Your other themes.
                         [

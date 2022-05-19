@@ -17,7 +17,10 @@ before or after the label of the thing they're quantifying, such as the number o
 be used to represent a number, however, in some cases, letters or characters can be used as well. See [**badges
 component.**](https:/)
 
-![drawing](/img/patterns-screenshots/patterns-screenshots/Badge/badges-Default-primary.png) ![drawing](/img/patterns-screenshots/patterns-screenshots/Badge/badges-Inverted-primary.png) ![drawing](/img/patterns-screenshots/patterns-screenshots/Badge/badges-Default.png) ![drawing](/img/patterns-screenshots/patterns-screenshots/Badge/badges-Important.png) ![drawings](/img/patterns-screenshots/patterns-screenshots/Badge/badges-Added.png) ![drawings](/img/patterns-screenshots/patterns-screenshots/Badge/badges-Removed.png)
+import {UsuBadge} from '@usu/react-components'
+import {BadgeColors} from '@usu/react-components'
+
+<UsuBadge color='primary'> 12 </UsuBadge> <UsuBadge color='inverted'> 12 </UsuBadge> <UsuBadge color='default'> 12 </UsuBadge> <UsuBadge color='important'> 12 </UsuBadge> <UsuBadge color='add'> +12 </UsuBadge> <UsuBadge color='remove'> -12 </UsuBadge>
 
 ### Banners
 
@@ -26,10 +29,16 @@ site-wide information that affects the user's ability to use the product. Banner
 only disappear once the related issue is resolved, and should not be dismissible. Banners appear in the screen by
 pushing the entire content below by animating. See [**banner component.**](https:/)
 
-![Anatomy](/img/patterns-screenshots/patterns-screenshots/Banners/banner-messages-Error.png)
-![Anatomy](/img/patterns-screenshots/patterns-screenshots/Banners/banner-messages-Information.png)
-![Anatomy](/img/patterns-screenshots/patterns-screenshots/Banners/banner-messages-Success.png)
-![Anatomy](/img/patterns-screenshots/patterns-screenshots/Banners/banner-messages-Warning.png)
+import {UsuBannerMessage} from '@usu/react-components'
+
+<UsuBannerMessage status='error'>Error Message</UsuBannerMessage>
+<h1/>
+<UsuBannerMessage status='info'>Info Message</UsuBannerMessage>
+<h1/>
+<UsuBannerMessage status='success'>Success Message</UsuBannerMessage>
+<h1/>
+<UsuBannerMessage status='warning'>Warning Message</UsuBannerMessage>
+<h1/>
 
 ### Section Messages
 
@@ -37,9 +46,34 @@ Section messages are used to alert users that something has happened in a sectio
 and will only disappear once the situation has been resolved or the user has taken action. See [**section message
 component.**](https://)
 
-![Section](/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Information.png) ![Section](/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Warning.png)
+[//]: # (![Section]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Information.png&#41; ![Section]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Warning.png&#41;)
 
-![Sections](/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Success.png) ![Sections](/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Error.png)
+[//]: # ()
+
+[//]: # (![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Success.png&#41; ![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Error.png&#41;)
+
+import {UsuSectionMessage} from '@usu/react-components'
+
+<UsuSectionMessage status='info'>Info Message Title
+ <div>Descriptive Message Text for this Information.</div>
+ <a slot="action" href="https://www.usu.com/en/" target="_blank" >Possible Action</a>
+</UsuSectionMessage>
+<h1/>
+<UsuSectionMessage status='warning'>Warning Message
+<div>Descriptive Message Text for this Information.</div>
+    <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a>
+</UsuSectionMessage>
+<h1/>
+<UsuSectionMessage status='success'>Success Message
+<div>Descriptive Message Text for this Information.</div>
+    <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a>
+</UsuSectionMessage>
+<h1/>
+<UsuSectionMessage status='error'>Error Message
+ <div>Descriptive Message Text for this Information.</div>
+ <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a>
+</UsuSectionMessage>
+<h1/>
 
 ### Toast Messages
 
@@ -48,9 +82,32 @@ messages appear by default at the bottom-right of the screen, overlapping the co
 or bottom-left are allowed depending on where the particular use case action is taking place. A toast should be placed
 with a 16px padding around it. See [**Toast message component.**](https://)
 
-![Section](/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Information.png) ![Section](/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Warning.png)
+[//]: # (![Section]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Information.png&#41; ![Section]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Warning.png&#41;)
 
-![Sections](/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Success.png) ![Sections](/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Error.png)
+[//]: # (![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Success.png&#41; ![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Error.png&#41;)
+
+import {UsuToast} from '@usu/react-components'
+
+<UsuToast
+status='info'
+header='Information Message Title'
+message='Descriptive Message Text for this Information'
+/>
+<h1/>
+<UsuToast status ='warning'
+header='Warning Message Title'
+message='Descriptive Message Text for this Warning'
+/>
+<h1/>
+<UsuToast status ='success'
+header='Success Message Title'
+message='Descriptive Message Text for this Success'
+/>
+<h1/>
+<UsuToast status ='error'
+header='Error Message Title'
+message='Descriptive Message Text for this Error'
+/>
 
 ## Colors
 
@@ -96,3 +153,8 @@ The use of icons changes depends on the information they should transport. This 
 people to understand the message.
 
 ![Section](/img/patterns-screenshots/patterns-screenshots/icons-teaser.png)
+
+[//]: # (import {Icons} from '@usu/react-components')
+
+[//]: # ()
+[//]: # (<Icons/>)

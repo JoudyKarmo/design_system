@@ -235,13 +235,17 @@ message="Descriptive Message Text for this Warning"
   <TabItem value="reflection" label="React">
 
 ``` JavaScript live=true
+function Toast() {
+return (
 <div>
-<usu-toast
- status='error'
-  header='Error Message Title'
-  message='Descriptive Message Text for this Error'
+<UsuToast
+status="error"
+header="Error Message Title"
+message="Descriptive Message Text"
 />
 </div>
+);
+}
 ```
 
   </TabItem>
