@@ -171,7 +171,7 @@ is  *`normal`* , the action will show as a link. For all other appearances the a
 <Tabs>
   <TabItem value="bright" label="Javascript">
 
-``` js showLineNumbers live
+``` js live=true
 <!-- Info (Default) Toast -->
 <usu-toast 
     header="Info Message Title" 
@@ -203,7 +203,7 @@ message="Descriptive Message Text for this Warning"
   </TabItem>
   <TabItem value="moody" label="Angular">
 
-```html showLineNumbers live
+```html live=true
 <!-- The UsuToastService usage of the usu-toast-container should be prefered to the direct component usage -->
 
 <!-- Success toast -->
@@ -238,7 +238,7 @@ message="Descriptive Message Text for this Warning"
   </TabItem>
   <TabItem value="reflection" label="React">
 
-``` JavaScript showLineNumbers live
+``` JavaScript live=true
 function Clock(props) {
   const [date, setDate] = useState(new Date());
   useEffect(() => {
@@ -266,28 +266,6 @@ return (
 </Tabs>
 
 **Changelog**
-
-[//]: # (<button class="my-button button bordered" style={{)
-
-[//]: # (backgroundColor: 'white',)
-
-[//]: # (border: 'thin solid purple',)
-
-[//]: # (borderRadius: 4 + 1 +'px',)
-
-[//]: # (padding: 0 + 8 + 'px',)
-
-[//]: # (marginLeft: 0 + 0 + '86%',)
-
-[//]: # (fontSize: '15px',)
-
-[//]: # (color: 'Purple',)
-
-[//]: # (}}>)
-
-[//]: # (View Changelog)
-
-[//]: # (</button>)
 
 import {UsuButton, UsuToast} from '@usu/react-components'
 

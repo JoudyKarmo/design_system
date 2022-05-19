@@ -12,7 +12,7 @@ module.exports = {
     //     'experiences with the USU design system.',
     // url: 'https://your-docusaurus-test-site.com',
     url: 'elaborate-mousse-ce89c2.netlify.app',
-    baseUrl: '/design_system/',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
@@ -72,7 +72,7 @@ module.exports = {
         ],
     ],
     plugins: ['@docusaurus/theme-live-codeblock'],
-    plugins: [require.resolve('docusaurus-lunr-search')],
+    // plugins: [require.resolve('docusaurus-lunr-search')],
     themeConfig: {
 
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
