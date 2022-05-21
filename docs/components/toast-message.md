@@ -73,11 +73,13 @@ message='Descriptive Message Text for this Information'
 * Get right to the point.
 * Based on the situation, you can add more "wink" to your message, but keep it clear and concise.
 
-import {UsuSearch, UsuRadioButton} from '@usu/react-components'
+[//]: # (import {UsuSearch, UsuRadioButton} from '@usu/react-components')
 
-<UsuSearch> search </UsuSearch>
+[//]: # ()
+[//]: # (<UsuSearch> search </UsuSearch>)
 
-<UsuRadioButton> hi </UsuRadioButton>
+[//]: # ()
+[//]: # (<UsuRadioButton> hi </UsuRadioButton>)
 
 ### Success
 
@@ -165,7 +167,6 @@ Use  *`actions`*  to show a clickable action at the bottom of the toast message.
 is  *`normal`* , the action will show as a link. For all other appearances the actions will be buttons.
 
   </TabItem>
-
   <TabItem value="code" label="Code">
 
 ### Installation
@@ -199,9 +200,9 @@ message="Descriptive Message Text for this Warning"
 ></usu-toast>
 </div>
 ```
-
   </TabItem>
-  <TabItem value="moody" label="Angular">
+  
+<TabItem value="moody" label="Angular">
 
 ```html live=true
 <div>
@@ -230,21 +231,21 @@ message="Descriptive Message Text for this Warning"
 ></usu-toast>
 </div>
 ```
-
   </TabItem>
-  <TabItem value="reflection" label="React">
+<TabItem value="reflection" label="React">
 
 ``` JavaScript live=true
+function Toast() {
+return (
 <div>
-<usu-toast
- status='error'
-  header='Error Message Title'
-  message='Descriptive Message Text for this Error'
-/>
+<UsuToast status="error"
+header="Error Message Title"
+message="Descriptive Message Text"/>
 </div>
+);}
 ```
-
   </TabItem>
+
 </Tabs>
 
 **Changelog**

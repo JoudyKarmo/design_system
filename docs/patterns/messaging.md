@@ -56,8 +56,7 @@ import {UsuSectionMessage} from '@usu/react-components'
 
 <UsuSectionMessage status='info'>Info Message Title
  <div>Descriptive Message Text for this Information.</div>
- <a slot="action" href="https://www.usu.com/en/" target="_blank" >Possible Action</a>
-</UsuSectionMessage>
+ <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a></UsuSectionMessage>
 <h1/>
 <UsuSectionMessage status='warning'>Warning Message
 <div>Descriptive Message Text for this Information.</div>

@@ -14,6 +14,7 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
+    "@cmfcmf/docusaurus-search-local": "^0.10.0",
     "@docusaurus/core": "^2.0.0-beta.20",
     "@docusaurus/preset-classic": "^2.0.0-beta.20",
     "@docusaurus/theme-live-codeblock": "^2.0.0-beta.20",
@@ -22,6 +23,8 @@
     "@mdx-js/react": "^1.6.22",
     "@stencil/core": "^2.15.1",
     "@usu/react-components": "1.29.1",
+    "@usu/theming-engine": "^1.1.0",
+    "@usu/web-components": "^1.29.2",
     "clsx": "^1.1.1",
     "docusaurus-lunr-search": "^2.1.15",
     "docusaurus-plugin-code-preview": "^0.0.1",
