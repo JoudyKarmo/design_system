@@ -1,19 +1,32 @@
 ---
-sidebar_position: 25
-id: toast-message
-title: Toast-Message
-sidebar_label: Toast Message
+sidebar_position: 26
+id: toast-messages
+title: Toast-Messages
+sidebar_label: Toast Messages
 ---
-
-# Toast Messages
 
 This is a description about the Toast Message Component
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs>
-  <TabItem value="usage" label="Usage" class="pagination">
+## **Usage**
+
+import TOCInline from '@theme/TOCInline';
+
+<TOCInline
+// Only show h2 and h4 headings
+toc={toc.filter((node) => node.level === 2 || node.level === 4)}
+minHeadingLevel={2}
+// Show h4 headings in addition to the default h2 and h3 headings
+maxHeadingLevel={4}
+/>
+
+<ul>
+<li>
+hi
+</li>
+</ul>
 
 Toast are used for confirmations, alerts, and acknowledgments that require **minimal** user interaction. These
 event-                                                                                                                                                                                                                       
@@ -24,7 +37,7 @@ be
 placed with a 16px padding around it (See example bellow). If the user does not close them, the toast message is closed
 automatically after 5 seconds.
 
-## Anatomy
+### Anatomy
 
 1. Icon and title: Toast messages should always contain a concise title and an
    appropriate [icon](https://atlassian.design/foundations/iconography)
@@ -36,7 +49,7 @@ automatically after 5 seconds.
 
 ![Anatomy](/img/toast-messages-screenshots/explainer-teaser.png)
 
-## Rules / Best practice
+### Rules / Best practice
 
 In general, there are four possible types of messages: info, success, warning and error.    
 But - toast messages should be used for general, **event-driven messages that are dismissible.** One common use case    
@@ -50,7 +63,7 @@ if an interaction with the user is necessary or an action should be suggested, t
 appropriate messaging format. For these cases [**section messages**](https://docusaurus.io/) Read the
 or [**modals**](https://docusaurus.io/) should be used.
 
-## Content guidelines
+### Content guidelines
 
 Toast messages appear at the bottom left of the screen and overlay any content.     
 There are four types of Toast Messages: info, success, warning and error.       
@@ -61,7 +74,7 @@ people to easily jump into a conversation or activity feed to get a quick update
 instead     
 of the icon.
 
-### Information
+#### Information
 
 <UsuToast
 status='info'
@@ -83,7 +96,7 @@ message='Descriptive Message Text for this Information'
 
 [//]: # (<UsuRadioButton> hi </UsuRadioButton>)
 
-### Success
+#### Success
 
 <UsuToast
 status='success'
@@ -94,7 +107,7 @@ message='Descriptive Message Text for this Success'
 * Messages that appear more frequently should have less wink and be more concise.
 * Messages that appear after a bigger or more infrequent action can be more playful.
 
-### Warning
+#### Warning
 
 [//]: # (![Anatomy]&#40;/img/toast-messages-screenshots/Toast-Message-Warning.png&#41;)
 
@@ -107,7 +120,7 @@ message='Descriptive Message Text for this Warning'
 * Put yourself in the user's shoes.
 * Make sure you're not talking about something that has already occurred (this should be an error message instead).
 
-### Error
+#### Error
 
 [//]: # (![Anatomy]&#40;/img/toast-messages-screenshots/Toast-Message-Error.png&#41;)
 
@@ -147,11 +160,12 @@ dapibus ac facilisis in, egestas eget quam.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Donec sed odio dui.
 See [**here**](https://docusaurus.io/) or [**there**](https://docusaurus.io/)
-</TabItem>
 
-  <TabItem value="examples" label="Examples" >
+---
 
-## Default
+## **Examples**
+
+### Default
 
 The default toast message type includes a dismiss button. All toast messages require a  *`title`*  and an  *`icon`* .
 Make sure the icon and color match the intent of your message, such as warning, error, information, or success. Toast
@@ -188,18 +202,20 @@ message='Descriptive Message Text for this Information'
 />
 <h1></h1>
 
-## Actions
+### Actions
 
 Use  *`actions`*  to show a clickable action at the bottom of the toast message. For toast messages where the appearance
 is  *`normal`* , the action will show as a link. For all other appearances the actions will be buttons.
 
-  </TabItem>
-  <TabItem value="code" label="Code">
+## **Code**
 
 ### Installation
 
 <Tabs>
+
   <TabItem value="bright" label="Javascript">
+
+#### JavaScript
 
 ``` js live=true
 <div>
@@ -261,6 +277,7 @@ message="Descriptive Message Text for this Warning"
 ```
 
   </TabItem>
+
 <TabItem value="reflection" label="React">
 
 ``` JavaScript live=true
@@ -278,7 +295,7 @@ message="Descriptive Message Text"/>
 
 </Tabs>
 
-**Changelog**
+### Changelog
 
 import {UsuButton, UsuToast} from '@usu/react-components'
 
@@ -337,6 +354,4 @@ Patch Changes:
 * [**Button**](https://docusaurus.io/)
 * [**Icons**](https://docusaurus.io/)
 
-</TabItem>
-</Tabs>
 

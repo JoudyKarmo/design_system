@@ -85,9 +85,13 @@ module.exports = {
             },
         },
     },
-    plugins: ['@docusaurus/theme-live-codeblock', require.resolve("@cmfcmf/docusaurus-search-local")],
+    plugins: [
+        '@docusaurus/theme-live-codeblock', '@cmfcmf/docusaurus-search-local'],
     themeConfig: {
-
+        tableOfContents: {
+            minHeadingLevel: 2,
+            maxHeadingLevel: 4,
+        },
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 
         liveCodeBlock: {
