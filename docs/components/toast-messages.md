@@ -1,6 +1,6 @@
 ---
-sidebar_position: 25
-id: toast messages
+sidebar_position: 26
+id: toast-message
 title: Toast-Message
 sidebar_label: Toast Message
 ---
@@ -196,6 +196,7 @@ is  *`normal`* , the action will show as a link. For all other appearances the a
 ### Installation
 
 <Tabs>
+
   <TabItem value="bright" label="Javascript">
 
 #### JavaScript
@@ -336,4 +337,5 @@ Patch Changes:
 
 * [**Button**](https://docusaurus.io/)
 * [**Icons**](https://docusaurus.io/)
+
 

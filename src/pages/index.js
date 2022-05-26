@@ -6,6 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import SearchHeader from "../theme/SearchBar/";
+import LunarSearch from "docusaurus-lunr-search/src/theme/SearchBar/lib/lunar-search";
+import Search from "docusaurus-lunr-search/src/theme/SearchBar";
 
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
@@ -23,11 +25,13 @@ function HomepageHeader() {
                 {/*  Docusaurus Tutorial - 5min ⏱️*/}
                 {/*</Link>*/}
                 <div className={clsx('hero hero--primary', styles.hero)}>
-                    <SearchHeader/>
+                    {/*<SearchHeader/>*/}
+                    {/*<Search>global search</Search>*/}
+                    <SearchHeader>
+                        {/*<Search/>*/}
+                    </SearchHeader>
                 </div>
             </div>
-
-
         </header>
     );
 }
