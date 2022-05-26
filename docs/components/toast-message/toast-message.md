@@ -1,11 +1,11 @@
 ---
-sidebar_position: 25
+sidebar_position: 26
 id: toast-message
 title: Toast-Message
 sidebar_label: Toast Message
 ---
 
-# Toast Messages
+# Toast-Messages
 
 This is a description about the Toast Message Component
 

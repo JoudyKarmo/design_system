@@ -30,6 +30,7 @@ module.exports = {
                     // Please change this to your repo.
                     editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                     breadcrumbs: true,
+
                 },
                 // i18n: {
                 //     defaultLocale: 'en',
@@ -51,7 +52,7 @@ module.exports = {
                 //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                 // },
                 theme: {
-                    customCss: [require.resolve('./src/css/custom.css'),require.resolve('./src/css/usu-icons.css')],
+                    customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/usu-icons.css')],
                     themes: [
                         // ... Your other themes.
                         [
@@ -74,7 +75,15 @@ module.exports = {
     plugins: ['@docusaurus/theme-live-codeblock'],
     // plugins: [require.resolve('docusaurus-lunr-search')],
     themeConfig: {
-
+        // docs: {
+        //     sidebar: {
+        //         hideable: true,
+        //     },
+        // },
+        tableOfContents: {
+            minHeadingLevel: 2,
+            maxHeadingLevel: 5,
+        },
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 
         liveCodeBlock: {
