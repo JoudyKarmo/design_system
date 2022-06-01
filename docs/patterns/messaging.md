@@ -17,10 +17,11 @@ before or after the label of the thing they're quantifying, such as the number o
 be used to represent a number, however, in some cases, letters or characters can be used as well. See [**badges
 component.**](https:/)
 
+<BrowserOnly>
 import {UsuBadge} from '@usu/react-components'
-import {BadgeColors} from '@usu/react-components'
 
 <UsuBadge color='primary'> 12 </UsuBadge> <UsuBadge color='inverted'> 12 </UsuBadge> <UsuBadge color='default'> 12 </UsuBadge> <UsuBadge color='important'> 12 </UsuBadge> <UsuBadge color='add'> +12 </UsuBadge> <UsuBadge color='remove'> -12 </UsuBadge>
+</BrowserOnly>
 
 ### Banners
 
@@ -29,6 +30,7 @@ site-wide information that affects the user's ability to use the product. Banner
 only disappear once the related issue is resolved, and should not be dismissible. Banners appear in the screen by
 pushing the entire content below by animating. See [**banner component.**](https:/)
 
+<BrowserOnly>
 import {UsuBannerMessage} from '@usu/react-components'
 
 <UsuBannerMessage status='error'>Error Message</UsuBannerMessage>
@@ -39,6 +41,7 @@ import {UsuBannerMessage} from '@usu/react-components'
 <h1/>
 <UsuBannerMessage status='warning'>Warning Message</UsuBannerMessage>
 <h1/>
+</BrowserOnly>
 
 ### Section Messages
 
@@ -52,6 +55,7 @@ component.**](https://)
 
 [//]: # (![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Success.png&#41; ![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Error.png&#41;)
 
+<BrowserOnly>
 import {UsuSectionMessage} from '@usu/react-components'
 
 <UsuSectionMessage status='info'>Info Message Title
@@ -73,6 +77,7 @@ import {UsuSectionMessage} from '@usu/react-components'
  <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a>
 </UsuSectionMessage>
 <h1/>
+</BrowserOnly>
 
 ### Toast Messages
 
@@ -85,6 +90,7 @@ with a 16px padding around it. See [**Toast message component.**](https://)
 
 [//]: # (![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Success.png&#41; ![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Error.png&#41;)
 
+<BrowserOnly>
 import {UsuToast} from '@usu/react-components'
 
 <UsuToast
@@ -107,6 +113,7 @@ message='Descriptive Message Text for this Success'
 header='Error Message Title'
 message='Descriptive Message Text for this Error'
 />
+</BrowserOnly>
 
 ## Colors
 

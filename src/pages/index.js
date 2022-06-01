@@ -1,13 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import SearchHeader from "../theme/SearchBar/";
-import LunarSearch from "docusaurus-lunr-search/src/theme/SearchBar/lib/lunar-search";
-import Search from "docusaurus-lunr-search/src/theme/SearchBar";
 
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
@@ -19,19 +15,10 @@ function HomepageHeader() {
                 {/*<div className={styles.buttons}>*/}
                 <p>Design, build, and ship coherent </p>
                 <p> experiences with the USU design system.</p>
-                {/*<Link*/}
-                {/*  className="button button--secondary button--lg"*/}
-                {/*  to="/docs/intro">*/}
-                {/*  Docusaurus Tutorial - 5min ⏱️*/}
-                {/*</Link>*/}
                 <div className={clsx('hero hero--primary', styles.hero)}>
-                    {/*<SearchHeader/>*/}
-                    {/*<Search>global search</Search>*/}
-                    <SearchHeader>
-                        {/*<Search/>*/}
-                    </SearchHeader>
                 </div>
             </div>
+
         </header>
     );
 }
@@ -40,11 +27,11 @@ export default function Home() {
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
-            // title={`Hello from ${siteConfig.title}`}
             description="Description will go into a meta tag in  <head />">
             <HomepageHeader/>
             <main>
                 <HomepageFeatures/>
+
             </main>
         </Layout>
     );
