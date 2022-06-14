@@ -4,6 +4,26 @@ title:  Messaging
 sidebar_label: Messaging
 ---
 
+import BrowserOnly from '@docusaurus/BrowserOnly';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<BrowserOnly>
+{() => {
+    const defineBadge = require('@usu/web-components/dist/components/usu-badge').defineCustomElement;
+    const defineBannerMessage = require('@usu/web-components/dist/components/usu-banner-message').defineCustomElement;
+    const defineSectionMessage = require('@usu/web-components/dist/components/usu-section-message').defineCustomElement;
+    const defineToast = require('@usu/web-components/dist/components/usu-toast').defineCustomElement;
+    defineBadge();
+    defineBannerMessage();
+    defineSectionMessage();
+    defineToast();
+    return null;
+}}
+</BrowserOnly>
+
+
+
 Messages should be used to communicate conditions, indicate an event, or show responses to user actions.
 
 ## Message types
@@ -17,11 +37,7 @@ before or after the label of the thing they're quantifying, such as the number o
 be used to represent a number, however, in some cases, letters or characters can be used as well. See [**badges
 component.**](https:/)
 
-<BrowserOnly>
-import {UsuBadge} from '@usu/react-components'
-
-<UsuBadge color='primary'> 12 </UsuBadge> <UsuBadge color='inverted'> 12 </UsuBadge> <UsuBadge color='default'> 12 </UsuBadge> <UsuBadge color='important'> 12 </UsuBadge> <UsuBadge color='add'> +12 </UsuBadge> <UsuBadge color='remove'> -12 </UsuBadge>
-</BrowserOnly>
+<usu-badge color='primary'> 12 </usu-badge> <usu-badge color='inverted'> 12 </usu-badge> <usu-badge color='default'> 12 </usu-badge> <usu-badge color='important'> 12 </usu-badge> <usu-badge color='add'> +12 </usu-badge> <usu-badge color='remove'> -12 </usu-badge>
 
 ### Banners
 
@@ -30,18 +46,14 @@ site-wide information that affects the user's ability to use the product. Banner
 only disappear once the related issue is resolved, and should not be dismissible. Banners appear in the screen by
 pushing the entire content below by animating. See [**banner component.**](https:/)
 
-<BrowserOnly>
-import {UsuBannerMessage} from '@usu/react-components'
-
-<UsuBannerMessage status='error'>Error Message</UsuBannerMessage>
+<usu-banner-message status='error'>Error Message</usu-banner-message>
 <h1/>
-<UsuBannerMessage status='info'>Info Message</UsuBannerMessage>
+<usu-banner-message status='info'>Info Message</usu-banner-message>
 <h1/>
-<UsuBannerMessage status='success'>Success Message</UsuBannerMessage>
+<usu-banner-message status='success'>Success Message</usu-banner-message>
 <h1/>
-<UsuBannerMessage status='warning'>Warning Message</UsuBannerMessage>
+<usu-banner-message status='warning'>Warning Message</usu-banner-message>
 <h1/>
-</BrowserOnly>
 
 ### Section Messages
 
@@ -55,29 +67,29 @@ component.**](https://)
 
 [//]: # (![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Success.png&#41; ![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Error.png&#41;)
 
-<BrowserOnly>
-import {UsuSectionMessage} from '@usu/react-components'
-
-<UsuSectionMessage status='info'>Info Message Title
- <div>Descriptive Message Text for this Information.</div>
- <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a></UsuSectionMessage>
-<h1/>
-<UsuSectionMessage status='warning'>Warning Message
-<div>Descriptive Message Text for this Information.</div>
-    <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a>
-</UsuSectionMessage>
-<h1/>
-<UsuSectionMessage status='success'>Success Message
-<div>Descriptive Message Text for this Information.</div>
-    <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a>
-</UsuSectionMessage>
-<h1/>
-<UsuSectionMessage status='error'>Error Message
+<usu-section-message status='info'>
+  <span slot="title">Info Message</span>
  <div>Descriptive Message Text for this Information.</div>
  <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a>
-</UsuSectionMessage>
+</usu-section-message>
 <h1/>
-</BrowserOnly>
+<usu-section-message status='warning'>
+  <span slot="title">Warning Message Title</span>
+  <div>Descriptive Message Text for this Information.</div>
+  <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a>
+</usu-section-message>
+<h1/>
+<usu-section-message status='success'>
+  <span slot="title">Success Message</span>
+  <div>Descriptive Message Text for this Information.</div>
+  <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a>
+</usu-section-message>
+<h1/>
+<usu-section-message status='error'>
+  <span slot="title">Error Message</span>
+ <div>Descriptive Message Text for this Information.</div>
+ <a slot="action" href="https://www.usu.com/en/" target="_blank">Possible Action</a>
+</usu-section-message>
 
 ### Toast Messages
 
@@ -90,30 +102,26 @@ with a 16px padding around it. See [**Toast message component.**](https://)
 
 [//]: # (![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Success.png&#41; ![Sections]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Error.png&#41;)
 
-<BrowserOnly>
-import {UsuToast} from '@usu/react-components'
-
-<UsuToast
+<usu-toast
 status='info'
 header='Information Message Title'
 message='Descriptive Message Text for this Information'
 />
 <h1/>
-<UsuToast status ='warning'
+<usu-toast status ='warning'
 header='Warning Message Title'
 message='Descriptive Message Text for this Warning'
 />
 <h1/>
-<UsuToast status ='success'
+<usu-toast status ='success'
 header='Success Message Title'
 message='Descriptive Message Text for this Success'
 />
 <h1/>
-<UsuToast status ='error'
+<usu-toast status ='error'
 header='Error Message Title'
 message='Descriptive Message Text for this Error'
 />
-</BrowserOnly>
 
 ## Colors
 
@@ -159,8 +167,3 @@ The use of icons changes depends on the information they should transport. This 
 people to understand the message.
 
 ![Section](/img/patterns-screenshots/patterns-screenshots/icons-teaser.png)
-
-[//]: # (import {Icons} from '@usu/react-components')
-
-[//]: # ()
-[//]: # (<Icons/>)

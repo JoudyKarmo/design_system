@@ -3,17 +3,13 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-// const themeLiveCodeblock = require("@docusaurus/theme-live-codeblock/lib");
-// const sectionPrefix = require('./src/remark/section-prefix');
 
 /** @type {import('@docusaurus/types').Config} */
-module.exports = {
+const config = {
     title: 'OneUSU Design System',
-    // tagline: 'Design, build, and ship coherent\n' +
-    //     'experiences with the USU design system.',
-    // url: 'https://your-docusaurus-test-site.com',
-    url: 'elaborate-mousse-ce89c2.netlify.app',
-    baseUrl: '/',
+    url: 'curious-crepe-efdf22.netlify.app',
+    // url: 'https://elaborate-mousse-ce89c2.netlify.app',
+    baseUrl: '/design_system/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
@@ -25,8 +21,7 @@ module.exports = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-                    // remarkPlugins: [sectionPrefix],
-                    routeBasePath: '/',
+                    // routeBasePath: '/',
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -85,11 +80,6 @@ module.exports = {
     plugins: [
         '@docusaurus/theme-live-codeblock'],
     themeConfig: {
-        // docs: {
-        //     sidebar: {
-        //         hideable: true,
-        //     },
-        // },
         tableOfContents: {
             minHeadingLevel: 2,
             maxHeadingLevel: 5,
@@ -118,6 +108,12 @@ module.exports = {
                     sidebarId: 'tutorial',
                     position: 'left',
                     label: 'All About One USU',
+                },
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'tutorials',
+                    position: 'left',
+                    label: 'All',
                 },
                 {
                     type: 'docSidebar',
@@ -153,24 +149,9 @@ module.exports = {
                     type: "localeDropdown",
                     position: "right"
                 }
-                // {to: '/blog', label: 'Blog', position: 'left'},
-                // {
-                //     href: 'https://github.com/facebook/docusaurus',
-                //     label: 'GitHub',
-                //     position: 'right',
-                // },
             ],
         },
-        // algolia: {
-        //     apiKey: '04da223dad67e93f54a5a322e281ed8e',
-        //     indexName: 'Design_System',
-        //     contextualSearch: true,
-        //     placeholder: 'Search in my website',
-        //     appId: 'QSM0A4J6E0',
-        //     externalUrlRegex: 'external\\.com|domain\\.com',
-        //     searchParameters: {facetFilters: ['language:en', ['filter1', 'filter2'], 'filter3'],},
-        //     searchPagePath: 'search',
-        // },
+
         footer: {
             links: [
                 {
@@ -196,8 +177,7 @@ module.exports = {
         prism: {
             theme: lightCodeTheme,
             darkTheme: darkCodeTheme,
-            additionalLanguages: []
         },
     },
 };
-// module.exports = config;
+module.exports = config;

@@ -1,123 +1,104 @@
 ---
-sidebar_position: 26
-id: toast-message
-title: Toast-Message
-sidebar_label: Toast Message
+sidebar_position: 1
+id: all
+title: All
+sidebar_label: All
+
 ---
+
+# Toast Messages
+
+# A collapsible section with markdown
+
+import TOCInline from '@theme/TOCInline';
+import CodeBlock from '@theme/CodeBlock';
+
+The table of contents for this page, serialized:
+
+<CodeBlock className="language-json">{JSON.stringify(toc, null, 2)}</CodeBlock>
+
+The front matter of this page:
+
+<ul>
+  {Object.entries(frontMatter).map(([key, value]) => <li key={key}><b>{key}</b>: {value}</li>)}
+</ul>
+
+<p>The title of this page is: <b>{contentTitle}</b></p>
 
 This is a description about the Toast Message Component
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## **Usage**
+[//]: # (import styles from '../styles.module.css';)
+<button data-toggle="collapse" data-target="#demo">Collapsible</button>
 
-Toast are used for confirmations, alerts, and acknowledgments that require **minimal** user interaction. These
-event-                                                                                                                                                                                                                       
-driven messages appear by default at the bottom-right of the screen, overlapping the content. Other positions like
-top-                                                     
-right, or bottom-left are allowed depending on where the particular use case action is taking place. A toast should
-be      
-placed with a 16px padding around it (See example bellow). If the user does not close them, the toast message is closed
-automatically after 5 seconds.
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+</div>
 
-### Anatomy
+<Tabs>
+  <TabItem value="usage" label="Usage" default>
 
-1. Icon and title: Toast messages should always contain a concise title and an
-   appropriate [icon](https://atlassian.design/foundations/iconography)
-   , [color](https://atlassian.design/foundations/iconography) (or user avatar).
+This is a description about the Toast Message Component
+
+## Anatomy
+
+1. Icon and title: Toast messages should always contain a concise title and an appropriate icon, color (or user avatar).
 2. Message (optional): Toast messages descriptions are restricted to five lines in length. If the text overflows, it
    truncates using an ellipsis.
 3. Actions (optional): A maximum of two links that enable users to act on the Toast Message content.
 4. Dismiss: Use to close the Toast message. This is for default Toast messages only.
 
-![Anatomy](/img/toast-messages-screenshots/explainer-teaser.png)
+[//]: # (![Anatomy]&#40;/img/Toast.png&#41;)
 
-### Rules / Best practice
+## Rules / Best practice
 
-In general, there are four possible types of messages: info, success, warning and error.    
-But - toast messages should be used for general, **event-driven messages that are dismissible.** One common use case    
-for a toast message is as a notification about recent activity or as informing the user about a successful action.
-This     
+In general, there are four possible types of messages: info, success, warning and error.
+But - toast messages should be used for general, **event-driven messages that are dismissible.** One common use case for
+a toast message is as a notification about recent activity or as informing the user about a successful action. This
 allows people to easily jump into a conversation or activity feed to get a quick update.
 
 It should not be used to inform the user about an error or a warning, as the user might not see the message in time.
-Also,   
-if an interaction with the user is necessary or an action should be suggested, the toast message is not the
-appropriate messaging format. For these cases [**section messages**](https://docusaurus.io/) Read the
-or [**modals**](https://docusaurus.io/) should be used.
+Also, if an interaction with the user is necessary or an action should be suggested, the toast message is not the
+appropriate messaging format. For these cases [section messages](https://docusaurus.io/) Read the
+or [modals](https://docusaurus.io/) should be used.
 
-### Content guidelines
+## Content guidelines
 
-Toast messages appear at the bottom left of the screen and overlay any content.     
-There are four types of Toast Messages: info, success, warning and error.       
-Default Toast Messages are for general, event-driven messages that are dismissible. For example, as notifications for   
-recent activity. One common use case for default Toast Messages is as a notification about recent activity. This
-allows   
+Toast messages appear at the bottom left of the screen and overlay any content.
+There are four types of Toast Messages: info, success, warning and error.
+Default Toast Messages are for general, event-driven messages that are dismissible. For example, as notifications for
+recent activity. One common use case for default Toast Messages is as a notification about recent activity. This allows
 people to easily jump into a conversation or activity feed to get a quick update. In these cases, an avatar is used
-instead     
-of the icon.
+instead of the icon.
 
-#### Information
+### Information
 
-import BrowserOnly from '@docusaurus/BrowserOnly';
-
-<BrowserOnly>
-<UsuToast status='info'
-header='Information Message Title'
-message='Descriptive Message Text for this Information'
-/>
-</BrowserOnly>
+[//]: # (![Anatomy]&#40;/img/Info.png&#41;)
 
 * Say why it's important.
 * Get right to the point.
 * Based on the situation, you can add more "wink" to your message, but keep it clear and concise.
 
-[//]: # (import {UsuSearch, UsuRadioButton} from '@usu/react-components')
+### Success
 
-[//]: # ()
+[//]: # (![Anatomy]&#40;/img/Success.png&#41;)
 
-[//]: # (<UsuSearch> search </UsuSearch>)
-
-[//]: # ()
-
-[//]: # (<UsuRadioButton> hi </UsuRadioButton>)
-
-#### Success
-
-<BrowserOnly>
-<UsuToast
-status='success'
-header='Success Message Title'
-message='Descriptive Message Text for this Success'
-/>
-</BrowserOnly>
 * Messages that appear more frequently should have less wink and be more concise.
 * Messages that appear after a bigger or more infrequent action can be more playful.
 
-#### Warning
+### Warning
 
-[//]: # (![Anatomy]&#40;/img/toast-messages-screenshots/Toast-Message-Warning.png&#41;)
-<BrowserOnly>
-<UsuToast
-status='warning'
-header='Warning Message Title'
-message='Descriptive Message Text for this Warning'
-/>
-</BrowserOnly>
+[//]: # (![Anatomy]&#40;/img/Warning.png&#41;)
+
 * Put yourself in the user's shoes.
 * Make sure you're not talking about something that has already occurred (this should be an error message instead).
 
-#### Error
+### Error
 
-[//]: # (![Anatomy]&#40;/img/toast-messages-screenshots/Toast-Message-Error.png&#41;)
-<BrowserOnly>
-<UsuToast
-status='error'
-header='Error Message Title'
-message='Descriptive Message Text for this Error'
-/>
-</BrowserOnly>
+[//]: # (![Anatomy]&#40;/img/Error.png&#41;)
+
 * Avoid blame and accept if something is our fault - "we're having trouble connecting" rather than "you're having
   connection issues."
 * Let the user know what's causing the error, rather than writing a general error message that works for a number of
@@ -147,160 +128,98 @@ dapibus ac facilisis in, egestas eget quam.
 ## Related
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Donec sed odio dui.
-See [**here**](https://docusaurus.io/) or [**there**](https://docusaurus.io/)
+See [here](https://docusaurus.io/) or [there](https://docusaurus.io/)
+</TabItem>
 
----
+  <TabItem value="examples" label="Examples" >
 
-## **Examples**
-
-### Default
-
-The default toast message type includes a dismiss button. All toast messages require a  *`title`*  and an  *`icon`* .
-Make sure the icon and color match the intent of your message, such as warning, error, information, or success. Toast
-messages are often used within a toast group.
-
-[//]: # (![draw]&#40;/img/toast-messages-screenshots/Toast-Message-Information.png&#41; ![draw]&#40;/img/toast-messages-screenshots/Toast-Message-Warning.png&#41;)
-
-[//]: # ()
-
-[//]: # (![draws]&#40;/img/toast-messages-screenshots/Toast-Message-Success.png&#41;)
-
-[//]: # ()
-
-[//]: # (![draws]&#40;/img/toast-messages-screenshots/Toast-Message-Error.png&#41;)
-<BrowserOnly>
-<UsuToast status='info'
-header='Information Message Title'
-message='Descriptive Message Text for this Information'
-/>
-<h1></h1>
-<UsuToast status='warning'
-header='Information Message Title'
-message='Descriptive Message Text for this Information'
-/>
-<h1></h1>
-<UsuToast status='success'
-header='Information Message Title'
-message='Descriptive Message Text for this Information'
-/>
-<h1></h1>
-<UsuToast status='error'
-header='Information Message Title'
-message='Descriptive Message Text for this Information'
-/>
-<h1></h1>
-</BrowserOnly>
-
-### Actions
-
-Use  *`actions`*  to show a clickable action at the bottom of the toast message. For toast messages where the appearance
-is  *`normal`* , the action will show as a link. For all other appearances the actions will be buttons.
-
-## **Code**
+  </TabItem>
+  <TabItem value="code" label="Code">
 
 ### Installation
 
-<Tabs>
+#### Javascript
 
-  <TabItem value="bright" label="Javascript">
-
-#### JavaScript
-
-``` js live=true
-<div>
+```
+<!-- Info (Default) Toast -->
 <usu-toast 
     header="Info Message Title" 
     message="Descriptive Message Text for this Info"
 ></usu-toast>
-<h1/>
-<usu-toast
-status="error"
-header="Error Message Title"
-message="Descriptive Message Text for this Error"
+
+<!-- Error Toast -->
+<usu-toast 
+    status="error"
+    header="Error Message Title"
+    message="Descriptive Message Text for this Error"
 ></usu-toast>
-<h1/>
-<usu-toast
-status="success"
-header="Success Message Title"
-message="Descriptive Message Text for this Success"
+
+<!-- Success Toast -->
+<usu-toast 
+    status="success"
+    header="Success Message Title"
+    message="Descriptive Message Text for this Success"
 ></usu-toast>
-<h1/>
-<usu-toast
-status="warning"
-header="Warning Message Title"
-message="Descriptive Message Text for this Warning"
+
+<!-- Warning Toast -->
+<usu-toast 
+    status="warning"
+    header="Warning Message Title"
+    message="Descriptive Message Text for this Warning"
 ></usu-toast>
-</div>
 ```
 
-  </TabItem>
+#### Angular
 
-<TabItem value="moody" label="Angular">
+```
+<!-- The UsuToastService usage of the usu-toast-container should be prefered to the direct component usage -->
 
-```html live=true
-<div>
+<!-- Success toast -->
 <usu-toast
  status="success"
   header="Success Message Title"
   message="Descriptive Message Text for this success"
 ></usu-toast>
-<h1/>
+
+<!-- Info toast -->
 <usu-toast
   status="info"
   header="Info Message Title"
   message="Descriptive Message Text for this information"
 ></usu-toast>
-<h1/>
+
+<!-- Warning toast -->
 <usu-toast
   status="warning"
   header="Warning Message Title"
   message="Descriptive Message Text for this warning"
 ></usu-toast>
-<h1/>
+
+<!-- Error toast -->
 <usu-toast
   status="error"
   header="Error Message Title"
   message="Descriptive Message Text for this error"
 ></usu-toast>
-</div>
 ```
 
-  </TabItem>
+#### React
 
-<TabItem value="reflection" label="React">
-
-``` JavaScript live=true
-function Toast() {
-return (
-<div>
-<UsuToast status="error"
-header="Error Message Title"
-message="Descriptive Message Text"/>
-</div>
-);}
+```
+<UsuToast
+ status='error'
+  header='Error Message Title'
+  message='Descriptive Message Text for this Error'
+/>
 ```
 
-  </TabItem>
+**Changelog**
 
-</Tabs>
+1.1.7 [View Changelog](http://www.google.com)
 
-### Changelog
-
-<BrowserOnly>
-import {UsuButton, UsuToast} from '@usu/react-components'
-
-
-<UsuButton style={{
-backgroundColor: 'white',
-padding: 0 + 0 + 'px',
-marginLeft: 0 + 0 + '80%',
-}}>View Changelog</UsuButton>
-</BrowserOnly>
-
-**1.1.7**   
 Patch Changes:
 
-+ Updated dependencies
+* Updated dependencies
 
 ### Properties
 
@@ -343,7 +262,9 @@ Patch Changes:
 
 ### Dependencies
 
-* [**Button**](https://docusaurus.io/)
-* [**Icons**](https://docusaurus.io/)
+* [Button](https://docusaurus.io/)
+* [Icons](https://docusaurus.io/)
 
+</TabItem>
+</Tabs>
 

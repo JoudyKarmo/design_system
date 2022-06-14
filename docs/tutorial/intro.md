@@ -3,9 +3,29 @@ sidebar_position: 1
 id: all-about-one-usu
 title: All-about-one-usu
 sidebar_label: All-about-one-usu
+
+hide_table_of_contents: true
+
 ---
 
 # Toast Messages
+
+# A collapsible section with markdown
+
+import TOCInline from '@theme/TOCInline';
+import CodeBlock from '@theme/CodeBlock';
+
+The table of contents for this page, serialized:
+
+<CodeBlock className="language-json">{JSON.stringify(toc, null, 2)}</CodeBlock>
+
+The front matter of this page:
+
+<ul>
+  {Object.entries(frontMatter).map(([key, value]) => <li key={key}><b>{key}</b>: {value}</li>)}
+</ul>
+
+<p>The title of this page is: <b>{contentTitle}</b></p>
 
 This is a description about the Toast Message Component
 
@@ -13,6 +33,11 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 [//]: # (import styles from '../styles.module.css';)
+<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+</div>
 
 <Tabs>
   <TabItem value="usage" label="Usage" default>
@@ -238,9 +263,9 @@ Patch Changes:
 |  --usu-toast-title-font-weight  |  The title font weight of the toast  |
 
 ### Dependencies
+
 * [Button](https://docusaurus.io/)
 * [Icons](https://docusaurus.io/)
-
 
 </TabItem>
 </Tabs>
