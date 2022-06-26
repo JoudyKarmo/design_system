@@ -3,6 +3,18 @@
  * and scoped locally.
  */
 
+.section {
+    padding: 72px 0;
+}
+
+.sectionAlt {
+    background-color: #d9e5f1;
+}
+
+/*.sectionInner {*/
+/*    margin: 0 auto;*/
+/*}*/
+
 .heroBanner {
     padding-top: 150px;
     text-align: center;

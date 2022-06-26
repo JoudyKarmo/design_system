@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'OneUSU Design System',
-    url: 'curious-crepe-efdf22.netlify.app',
+    url: 'https://curious-crepe-efdf22.netlify.app',
     // url: 'https://elaborate-mousse-ce89c2.netlify.app',
     baseUrl: '/design_system/',
     onBrokenLinks: 'throw',
@@ -59,7 +59,6 @@ const config = {
             "@easyops-cn/docusaurus-search-local",
             {
                 hashed: true,
-                // language: ["en", "zh"],
                 highlightSearchTermsOnTargetPage: true,
                 explicitSearchResultPath: true,
             },
@@ -111,12 +110,6 @@ const config = {
                 },
                 {
                     type: 'docSidebar',
-                    sidebarId: 'tutorials',
-                    position: 'left',
-                    label: 'All',
-                },
-                {
-                    type: 'docSidebar',
                     sidebarId: 'foundations',
                     position: 'left',
                     label: 'Foundations',
@@ -145,10 +138,11 @@ const config = {
                     position: 'left',
                     label: 'Resources',
                 },
-                {
-                    type: "localeDropdown",
-                    position: "right"
-                }
+                //Languages
+                // {
+                //     type: "localeDropdown",
+                //     position: "right"
+                // }
             ],
         },
 

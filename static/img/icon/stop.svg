@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/stop</title>
+    <g id="Icon/stop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M60.6153846,1 L3.38461538,1 C2.06762867,1 1,2.06762867 1,3.38461538 L1,60.6153846 C1,61.9323713 2.06762867,63 3.38461538,63 L60.6153846,63 C61.9323713,63 63,61.9323713 63,60.6153846 L63,3.38461538 C63,2.06762867 61.9323713,1 60.6153846,1 Z M58,6 L58,58 L6,58 L6,6 L58,6 Z" id="Path" fill="#000000"></path>
+    </g>
+</svg>

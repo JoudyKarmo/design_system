@@ -18,21 +18,28 @@ function HomepageHeader() {
                 <div className={clsx('hero hero--primary', styles.hero)}>
                 </div>
             </div>
-
         </header>
     );
 }
 
 export default function Home() {
-    const {siteConfig} = useDocusaurusContext();
+    // const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
             description="Description will go into a meta tag in  <head />">
             <HomepageHeader/>
             <main>
                 <HomepageFeatures/>
-
             </main>
+            <div className={clsx(styles.section, styles.sectionAlt)}>
+                <div className="container">
+                    <h2 className={clsx('margin-bottom--lg', 'text--center')}>
+                        {/*<h1>Loved by many engineers</h1>*/}
+                    </h2>
+                </div>
+            </div>
         </Layout>
+
     );
 }
+

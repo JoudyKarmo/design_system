@@ -1,0 +1,29 @@
+.svg-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 0px;
+    outline: 2px solid gray;
+    /*padding-left: 60px;*/
+}
+
+.download {
+    width: 20px;
+    height: 20px;
+    background-image: url('/static/img/download.svg');
+    /*background-size: contain;*/
+    background-position: center right;
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    /*border-style: solid;*/
+    /*border-color: #8d949e;*/
+}
+
+.icon {
+    padding-left: 28px;
+
+}
+
+.tile-title {
+    padding-left: 10px;
+    font-weight: bold;
+}
