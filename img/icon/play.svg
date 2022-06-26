@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/play</title>
+    <g id="Icon/play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,2.00298174 L4,62.0029817 C4,63.5422976 5.66611168,64.5045836 6.99944491,63.7353529 L58.9994449,33.7353529 C60.3335184,32.9656952 60.3335184,31.0402683 58.9994449,30.2706106 L6.99944491,0.270610571 C5.66611168,-0.498620139 4,0.46366586 4,2.00298174 Z M8,5.46598174 L53.997,32.0029817 L8,58.5389817 L8,5.46598174 Z" id="Path" fill="#000000"></path>
+    </g>
+</svg>
