@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "up",
+    "name": "Arrow Up",
+    "tags": ["arrow", "chevron", "up"]
+  },
+  {
+    "icon": "right",
+    "name": "Arrow Right",
+    "tags": ["arrow", "chevron", "right"]
+  },
+  {
+    "icon": "down",
+    "name": "Arrow Down",
+    "tags": ["arrow", "chevron", "down"]
+  },
+  {
+    "icon": "left",
+    "name": "Arrow Left",
+    "tags": ["arrow", "chevron", "left"]
+  }
+]

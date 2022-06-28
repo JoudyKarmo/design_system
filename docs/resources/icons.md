@@ -2,11 +2,13 @@
 id: icon-library
 title: Icon library
 sidebar_label: Icon library
+collapsed: false
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+[//]: # (import searchable_icon from '/src/components/Icons/searchable_icon.js';)
 import SvgIcon from '/src/components/Icons/icon.jsx';
 
 <BrowserOnly>
@@ -17,9 +19,10 @@ import SvgIcon from '/src/components/Icons/icon.jsx';
     }}
 </BrowserOnly>
 
-<usu-icon type="close" size="large">
+[//]: # (<usu-icon type="close" size="large">)
 
-</usu-icon>
+[//]: # ()
+[//]: # (</usu-icon>)
 
 [//]: # (<SvgIcon header="close" imgSrc="/img/icon/close.svg"></SvgIcon>)
 
@@ -32,6 +35,10 @@ import SvgIcon from '/src/components/Icons/icon.jsx';
 <SvgIcon header="Close" icon="close" /> <h1/>
 <SvgIcon header="Add" icon="add" /> <h1/>
 <SvgIcon header="Delete" icon="delete" /> <h1/>
+
+[//]: # (<searchable_icon>add</searchable_icon>)
+    
+
 
 [//]: # (<SvgIcon><use href="path/to/img/icon/close.svg"/> </SvgIcon>)
 

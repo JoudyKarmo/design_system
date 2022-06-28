@@ -4,7 +4,7 @@
     padding: 2rem 0 2rem 20%;
     /*width: 80%;*/
     /*color: #004f9f;*/
-    height: 600px;
+    height: 650px;
     /*text-indent: 0px;*/
     /*text-align: left;*/
     /*opacity: 0;*/
@@ -15,14 +15,10 @@
     text-align: left;
     width: 400%;
 }
-
-.quadrat {
-    height: 200px;
-    width: 200px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
+.container{
+    justify-content: space-between;
+    display: inline-flex;
 }
-
 .title {
     text-indent: 0px;
     text-align: left;
@@ -31,6 +27,19 @@
     padding-left: 15px;
 }
 
+.square {
+    width: 170px;
+    height: 150px;
+    border-radius: 0px;
+    outline: 2px solid gray;
+    padding-left: 10px;
+    justify-content: flex-start;
+
+}
+.section{
+    display: inline-flex;
+    place-self: start;
+}
 /*.featureSvg {*/
 /*    height: 100px;*/
 /*    width: 200px;*/

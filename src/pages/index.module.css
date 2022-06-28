@@ -23,6 +23,11 @@
     color: black;
     height: 250px;
     background-color: #f2f6fa;
+    background-image: url('/static/img/brokenIcon.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 60px;
+
 }
 
 @media screen and (max-width: 996px) {

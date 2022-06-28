@@ -3,24 +3,46 @@
     height: 120px;
     border-radius: 0px;
     outline: 2px solid gray;
-    /*padding-left: 60px;*/
+    /*display: inline-grid;*/
+    flex-flow: column wrap;
+}
+/*Search field for icons*/
+.css-1a82ln7 {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #FAFBFC;
+    border-color: #DFE1E6;
+    color: #091E42;
+    cursor: text;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 100%;
+    font-size: 14px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: hidden;
+    transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+    overflow-wrap: break-word;
+    vertical-align: top;
+    pointer-events: auto;
+    width: 240px;
+    margin-bottom: 48px;
 }
 
 .download {
     width: 20px;
     height: 20px;
     background-image: url('/static/img/download.svg');
-    /*background-size: contain;*/
     background-position: center right;
-    /*background-attachment: fixed;*/
     background-repeat: no-repeat;
-    /*border-style: solid;*/
-    /*border-color: #8d949e;*/
 }
 
 .icon {
     padding-left: 28px;
-
 }
 
 .tile-title {

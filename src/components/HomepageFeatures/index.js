@@ -22,11 +22,21 @@ const FeatureList = [
                     <div className={styles.text}>
                         Here you can find all the basics rules in order to build a successful USU Product.
                     </div>
-                    <p>
-                        <a
-                            href={"https://www.usu.com/en-us/"}> Explore foundations >
-                        </a>
-                    </p>
+                    <p><a
+                        href={"https://www.usu.com/en-us/"}> Explore foundations >
+                    </a></p>
+                    <div className={styles.container}>
+                        <p className={styles.square}>
+                            <img src="add.svg"/><h1/>
+                            <strong>What is ONE USU Design System?</strong>
+                            Lorem ipsum dolor sit
+                        </p>
+                        <p className={styles.square}>
+                            <img src="add.svg"/><h1/>
+                            <strong>What is ONE USU Design System?</strong>
+                            Lorem ipsum dolor sit
+                        </p>
+                    </div>
 
                     <h3>
                         <div className={styles.title}> Content</div>
@@ -67,8 +77,6 @@ const FeatureList = [
                             href={"https://www.usu.com/en-us/"}> See more ressources >
                         </a>
                     </p>
-
-                    <div className={styles.quadrat}></div>
                 </div>
             ),
         },

@@ -26,7 +26,7 @@ const config = {
                     // Please change this to your repo.
                     editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                     breadcrumbs: true,
-
+                    sidebarCollapsed: false,
                 },
 
                 // i18n: {

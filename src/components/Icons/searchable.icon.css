@@ -1,0 +1,22 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.all-icons-list,
+.icons-result {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,136px);
+    grid-auto-rows: auto;
+}
+
+.icon-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon-name {
+    display: flex;
+    text-align: center;
+}
