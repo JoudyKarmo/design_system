@@ -1,11 +1,27 @@
-.svg-icon {
-    width: 120px;
-    height: 120px;
-    border-radius: 0px;
-    outline: 2px solid gray;
-    /*display: inline-grid;*/
-    flex-flow: column wrap;
+.icon-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,136px);
+    grid-auto-rows: auto;
 }
+.svg-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    outline: 2px solid gray;
+    box-sizing: border-box;
+}
+.tile-title {
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
 /*Search field for icons*/
 .css-1a82ln7 {
     -webkit-box-align: center;
@@ -33,19 +49,74 @@
     margin-bottom: 48px;
 }
 
+.download-button {
+    display: flex;
+}
+
 .download {
+    display: flex;
     width: 20px;
     height: 20px;
-    background-image: url('/static/img/download.svg');
-    background-position: center right;
+    background-image: url('../../../static/img/download.svg');
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .icon {
-    padding-left: 28px;
+
 }
 
-.tile-title {
-    padding-left: 10px;
-    font-weight: bold;
-}
+
+
+/*.svg-icon {*/
+/*    width: 120px;*/
+/*    height: 120px;*/
+/*    border-radius: 0px;*/
+/*    outline: 2px solid gray;*/
+/*    !*display: inline-grid;*!*/
+/*    flex-flow: column wrap;*/
+/*}*/
+/*!*Search field for icons*!*/
+/*.css-1a82ln7 {*/
+/*    -webkit-box-align: center;*/
+/*    align-items: center;*/
+/*    background-color: #FAFBFC;*/
+/*    border-color: #DFE1E6;*/
+/*    color: #091E42;*/
+/*    cursor: text;*/
+/*    border-radius: 3px;*/
+/*    border-width: 2px;*/
+/*    border-style: solid;*/
+/*    box-sizing: border-box;*/
+/*    display: flex;*/
+/*    flex: 1 1 100%;*/
+/*    font-size: 14px;*/
+/*    -webkit-box-pack: justify;*/
+/*    justify-content: space-between;*/
+/*    max-width: 100%;*/
+/*    overflow: hidden;*/
+/*    transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;*/
+/*    overflow-wrap: break-word;*/
+/*    vertical-align: top;*/
+/*    pointer-events: auto;*/
+/*    width: 240px;*/
+/*    margin-bottom: 48px;*/
+/*}*/
+
+/*.download {*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    background-image: url('/static/img/download.svg');*/
+/*    background-position: center right;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
+/*.icon {*/
+/*    padding-left: 28px;*/
+/*}*/
+
+/*.tile-title {*/
+/*    padding-left: 10px;*/
+/*    font-weight: bold;*/
+/*}*/

@@ -1,129 +1,121 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Information from '/static/img/icon/information.svg';
 
 const FeatureList = [
         {
-            title: <div className={styles.title}>All about one USU</div>,
-            // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+            title: <div>
+                {/*<h2 className={styles.text}>*/}
+                {/*    <a href="./docs/tutorial/all-about-one-usu">The USU Design system</a>*/}
+                {/*</h2>*/}
+                {/*<a className={styles.explore}*/}
+                {/*   href={"https://www.usu.com/en-us/"}> Explore all ➔*/}
+                {/*</a>*/}
+            </div>,
+
             description: (
-                <div className={styles.text}>
-                    Here you can find all the basics you need to understand the ONE usu design system, products and how to
-                    find what you need.
-                    <p>
-                        <a
-                            href={"https://www.usu.com/en-us/"}> Explore more about USU >
+                <div>
+                    <div className={styles.titleContainer}>
+                        <h2 className={styles.text}>
+                            <a href="./docs/tutorial/all-about-one-usu">The USU Design system</a>
+                        </h2>
+                        <a className={styles.explore}
+                           href={"https://www.usu.com/en-us/"}> Explore all ➔
                         </a>
-                    </p>
-
-                    <h3>
-                        <div className={styles.title}> Foundations</div>
-                    </h3>
-                    <div className={styles.text}>
-                        Here you can find all the basics rules in order to build a successful USU Product.
-                    </div>
-                    <p><a
-                        href={"https://www.usu.com/en-us/"}> Explore foundations >
-                    </a></p>
-                    <div className={styles.container}>
-                        <p className={styles.square}>
-                            <img src="add.svg"/><h1/>
-                            <strong>What is ONE USU Design System?</strong>
-                            Lorem ipsum dolor sit
-                        </p>
-                        <p className={styles.square}>
-                            <img src="add.svg"/><h1/>
-                            <strong>What is ONE USU Design System?</strong>
-                            Lorem ipsum dolor sit
-                        </p>
                     </div>
 
-                    <h3>
-                        <div className={styles.title}> Content</div>
-                    </h3>
-                    <div className={styles.text}>
-                        Our content guidance covers our voice and tone, and the mechanics of our grammar and style.
+                    <div className={styles.square}>
+                        <Information/>
+                        <span className={styles.header}>
+                    Learn about the USU Design System, how to use it, the USU Ecosystem and get all information about the releases.
+                    </span>
                     </div>
-                    <p>
-                        <a
-                            href={"https://www.usu.com/en-us/"}> Explore Content >
-                        </a>
-                    </p>
 
-                    <h3>
-                        <div className={styles.title}> Components & Patterns</div>
-                    </h3>
-                    <div className={styles.text}>
-                        Components are the reusable building blocks of our design system and Patterns are reusable
-                        combinations of components that solve common user problems.
+                    <div className={styles.titleContainer}>
+                        <h2 className={styles.text}>
+                            <a href="./docs/foundations/foundations">Foundations</a>
+                        </h2>
+                        <a className={styles.explore}
+                           href={"https://www.usu.com/en-us/"}> Explore all ➔
+                        </a>
                     </div>
-                    <p>
-                        <a
-                            href={"https://www.usu.com/en-us/"}> Explore All Components >
-                        </a>
-                        <a
-                            href={"https://www.usu.com/en-us/"}> Explore All Patterns >
-                        </a>
-                    </p>
 
-                    <h3>
-                        <div className={styles.title}> Ressources</div>
-                    </h3>
-                    <div className={styles.text}>
-                        Here you can find all the resources to download in order to start.
+                    <div className={styles.square}>
+                        <img className={styles.info} src={require('@site/static/img/colors.png').default}/>
+                        <span className={styles.header}>
+                    Find all the basics informations and requirement for building successful software products.
+                    </span>
                     </div>
-                    <p>
-                        <a
-                            href={"https://www.usu.com/en-us/"}> See more ressources >
+                    <div>
+                        <a className={styles.explore}
+                           href={"https://www.usu.com/en-us/"}> Explore all ➔
                         </a>
-                    </p>
+                    </div>
+
+                    <h2 className={styles.title}>
+                        <a href="./docs/content/">Content</a></h2>
+                    <div className={styles.square}>
+                        <img className={styles.info} src={require('@site/static/img/icon-catalog.png').default}/>
+                        <span className={styles.header}>
+                   Our content guidance covers writing guidelines, translations and imagery. Find the right voice and visuals to provide a better understanding of how your product works.
+                    </span>
+                    </div>
+
+                    <div>
+                        <a className={styles.explore}
+                           href={"https://www.usu.com/en-us/"}> Explore all ➔
+                        </a>
+                    </div>
+
+                    <h2 className={styles.title}>
+                        <a href="./docs/components/Accordion">Components</a></h2>
+                    <div className={styles.square}>
+                        <img className={styles.info} src={require('@site/static/img/puzzle.png').default}/>
+                        <span className={styles.header}>
+                  For each component you get building instructions and the code, as well as what they can be used for, which rules to respect and how to consider accessibility.
+                    </span>
+                    </div>
+
+                    <div>
+                        <a className={styles.explore}
+                           href={"https://www.usu.com/en-us/"}> Explore all ➔
+                        </a>
+                    </div>
+
+                    <h2 className={styles.title}>
+                        <a href="./docs/patterns/messaging">Patterns</a></h2>
+                    <div className={styles.square}>
+                        <img className={styles.info} src={require('@site/static/img/wireframe.png').default}/>
+                        <span className={styles.header}>
+For each component you get building instructions and the code, as well as what they can be used for, which rules to respect and how to consider accessibility.
+                    </span>
+                    </div>
+
+                    <div className={styles.explore}>
+                        <a
+                            href={"https://www.usu.com/en-us/"}> Explore all ➔
+                        </a>
+                    </div>
+                    <h2 className={styles.title}>
+                        <a href="./docs/resources/icon-library">Resources</a></h2>
+                    <div className={styles.square}>
+                        <img className={styles.info} src={require('@site/static/img/random.png').default}/>
+                        <span className={styles.header}>
+                Find here explanation and links to all other relevant documentation tools, as libraries and so on.
+                    </span>
+                    </div>
                 </div>
+                // </div>
             ),
         },
-
-// {
-//     description: (
-//         <div className={styles.text}>What is ONE USU Design System?
-//             Lorem ipsum dolor sit
-//             <p>
-//                 Here you can find all the basics you need to understand the ONE usu design system, products and how to
-//                 find what you need.
-//
-//             </p>
-//         </div>)
-// },
-
-// {
-//     description: (
-//         <> Explore more about USU </>)
-// },
-// {
-//   title: 'Focus on What Matters',
-//   Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-//   description: (
-//     <>
-//       Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-//       ahead and move your docs into the <code>docs</code> directory.
-//     </>
-//   ),
-// },
-// {
-//   title: 'Powered by React',
-//   Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-//   description: (
-//     <>
-//       Extend or customize your website layout by reusing React. Docusaurus can
-//       be extended while reusing the same header and footer.
-//     </>
-//   ),
-// },
     ]
 ;
 
 //Feature Structur
 function Feature({title, description}) {
     return (
-        <div className={clsx('col col--4')}>
+        <div className={clsx('col col--9')}>
             <div className="text--center">
                 {/*<Svg className={styles.featureSvg} role="img"/>*/}
             </div>

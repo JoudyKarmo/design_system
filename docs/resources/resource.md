@@ -2,7 +2,7 @@
 id: resources
 title: Resources
 sidebar_label: Resources
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 [//]: # ()
@@ -16,8 +16,12 @@ sidebar_position: 1
 
 [//]: # (</svg>)
 
-<svg viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg">
-  <circle id="myCircle" cx="5" cy="5" r="4" stroke="blue"/>
-  <use href="#myCircle" x="10" fill="blue"/>
-  <use href="#myCircle" x="20" fill="white" stroke="red"/>
-</svg>
+[//]: # (<svg viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg">)
+
+[//]: # (  <circle id="myCircle" cx="5" cy="5" r="4" stroke="blue"/>)
+
+[//]: # (  <use href="#myCircle" x="10" fill="blue"/>)
+
+[//]: # (  <use href="#myCircle" x="20" fill="white" stroke="red"/>)
+
+[//]: # (</svg>)

@@ -101,7 +101,8 @@ function SvgIcon(props) {
         <div className={'svg-icon'}>
             <header className="tile-title">{name}</header>
             <div className="tile-svg">
-                <img className="icon" src={useBaseUrl(`/img/${icon}.svg`)}/>
+                <img className="icon" src={useBaseUrl(`/img/icon/${icon}.svg`)}/>
+                <a href={useBaseUrl(`/img/icon/${icon}.svg`)} download={`${icon}.svg`}><p className="download"></p></a>
             </div>
         </div>
     )
@@ -119,7 +120,7 @@ function ShowIconList(props) {
     )
 }
 
-export default {SvgIcon, ShowIconList};
+export {SvgIcon, ShowIconList};
 
 // import React from 'react';
 // import useBaseUrl from '@docusaurus/useBaseUrl';

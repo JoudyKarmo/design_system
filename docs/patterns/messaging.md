@@ -23,28 +23,31 @@ import TabItem from '@theme/TabItem';
 </BrowserOnly>
 
 
-
 Messages should be used to communicate conditions, indicate an event, or show responses to user actions.
 
 ## Message types
 
 ### Badges
 
-[//]: # ([link]&#40;#error-messages&#41;)
+<div class="text">
 
 A badge contains a numeric value, to indicate a running tally or quantity-based summary. Badges are usually placed
 before or after the label of the thing they're quantifying, such as the number of votes for an issue. They should only
 be used to represent a number, however, in some cases, letters or characters can be used as well. See [**badges
 component.**](https:/)
+</div>
 
 <usu-badge color='primary'> 12 </usu-badge> <usu-badge color='inverted'> 12 </usu-badge> <usu-badge color='default'> 12 </usu-badge> <usu-badge color='important'> 12 </usu-badge> <usu-badge color='add'> +12 </usu-badge> <usu-badge color='remove'> -12 </usu-badge>
 
 ### Banners
 
+<div class="text">
+
 Use banners at the top of the screen to display critical messaging about loss of data, functionality, or important
 site-wide information that affects the user's ability to use the product. Banners should appear one at a time, should
 only disappear once the related issue is resolved, and should not be dismissible. Banners appear in the screen by
 pushing the entire content below by animating. See [**banner component.**](https:/)
+</div>
 
 <usu-banner-message status='error'>Error Message</usu-banner-message>
 <h1/>
@@ -57,9 +60,12 @@ pushing the entire content below by animating. See [**banner component.**](https
 
 ### Section Messages
 
+<div class="text">
+
 Section messages are used to alert users that something has happened in a section of the screen. They can't be dismissed
 and will only disappear once the situation has been resolved or the user has taken action. See [**section message
 component.**](https://)
+</div>
 
 [//]: # (![Section]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Information.png&#41; ![Section]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-action-Warning.png&#41;)
 
@@ -93,10 +99,13 @@ component.**](https://)
 
 ### Toast Messages
 
+<div class="text">
+
 Toast are used for confirmations, alerts, and acknowledgments that require minimal user interaction. These event-driven
 messages appear by default at the bottom-right of the screen, overlapping the content. Other positions like top-right,
 or bottom-left are allowed depending on where the particular use case action is taking place. A toast should be placed
 with a 16px padding around it. See [**Toast message component.**](https://)
+</div>
 
 [//]: # (![Section]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Information.png&#41; ![Section]&#40;/img/patterns-screenshots/patterns-screenshots/Section-Message-/Section-Message-clean-Warning.png&#41;)
 
@@ -124,13 +133,17 @@ message='Descriptive Message Text for this Error'
 />
 
 ## Colors
+<div class="text">
 
 Message types are assigned appropriate colors and icons to help indicate content and urgency. The available message
 types are authentication, confirmation, warning, error, and information. Setting the right color and icon for a message
 ensures people understand the nature of the message at a glance, and that they take appropriate action. Get to know more
 information about [**colors.**](https:/)
+</div>
 
 ![Section](/img/patterns-screenshots/patterns-screenshots/colors-teaser.png)
+
+<div class="text">
 
 1. Confirmation (G300): Provides a positive response to user actions.
 2. Warning (Y300): Used to help users avoid error situations. Consists of a description of potential errors. It should
@@ -139,6 +152,8 @@ information about [**colors.**](https:/)
    recommended next steps, or a path forward.
 4. Information (P300): Conveys information to help the user understand minor contextual or state changes. These are
    typically not in response to a user action.
+
+</div>
 
 ## Content
 

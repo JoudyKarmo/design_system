@@ -5,36 +5,91 @@
 
 .section {
     padding: 72px 0;
-}
-
-.sectionAlt {
-    background-color: #d9e5f1;
+    background-color: #f7f9fc;
 }
 
 /*.sectionInner {*/
 /*    margin: 0 auto;*/
 /*}*/
 
+.subtitle{
+    /*color: black;*/
+    /*padding-top: 10px;*/
+    width: 374px;
+    height: 37px;
+    margin: 32px 78px 32px 578px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    /*line-height: 0.46;*/
+    letter-spacing: 0.22px;
+    text-align: center;
+    color: #333;
+}
+.title{
+    width: 924px;
+    height: 42px;
+    margin: 60px 300px 32px;
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.7;
+    letter-spacing: 0.67px;
+    text-align: center;
+    color: #004f9f;
+}
+
 .heroBanner {
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    color: black;
-    height: 250px;
-    background-color: #f2f6fa;
-    background-image: url('/static/img/brokenIcon.jpg');
+    color: #004f9f;
+    height: 350px;
+    /*background-color: #f7f9fc;*/
+    background-image: url('/static/img/paperclips.png');
+    background-size: 110%;
     background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 60px;
-
+    background-position: center;
 }
+/*.section {*/
+/*    padding: 72px 0;*/
+/*}*/
+/*.sectionAlt {*/
+/*    background-color: var(--ifm-color-emphasis-100);*/
+/*}*/
 
-@media screen and (max-width: 996px) {
-    .heroBanner {
-        padding: 2rem;
-    }
-}
+/*.sectionInner {*/
+/*    margin: 0 auto;*/
+/*}*/
+/*.featureImage {*/
+/*    width: auto;*/
+/*    max-height: 128px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.featureHeading {*/
+/*    font-size: var(--ifm-h3-font-size);*/
+/*    padding-top: 1rem;*/
+/*}*/
+/*.banner {*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*    padding: 20px;*/
+/*    max-width: 768px;*/
+/*    margin: 0 auto;*/
+/*    text-align: center;*/
+/*}*/
+
+/*@media screen and (max-width: 0px) {*/
+/*    .heroBanner {*/
+/*        !*padding-bottom: 200rem;*!*/
+/*    }*/
+/*}*/
 
 .buttons {
     display: flex;
@@ -42,9 +97,10 @@
     justify-content: center;
 }
 
-.hero {
-    display: flex;
-    justify-content: center;
-    background-color: #f2f6fa;
-    padding-top: 0px;
-}
+/*.hero {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    background-color: #f7f9fc;*/
+
+/*    padding-top: 0px;*/
+/*}*/

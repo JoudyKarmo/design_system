@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// const lightCodeTheme = require('prism-react-renderer/themes/github');
+// const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -56,7 +56,7 @@ const config = {
     ],
     themes: [
         [
-            "@easyops-cn/docusaurus-search-local",
+            "@easyops-cn/docusaurus-Search-local",
             {
                 hashed: true,
                 highlightSearchTermsOnTargetPage: true,
@@ -79,6 +79,11 @@ const config = {
     plugins: [
         '@docusaurus/theme-live-codeblock'],
     themeConfig: {
+        colorMode: {
+            defaultMode: 'light',
+            disableSwitch: true,
+            respectPrefersColorScheme: false,
+        },
         tableOfContents: {
             minHeadingLevel: 2,
             maxHeadingLevel: 5,
@@ -168,10 +173,10 @@ const config = {
             ],
             copyright: `© USU GmbH ${new Date().getFullYear()}`,
         },
-        prism: {
-            theme: lightCodeTheme,
-            darkTheme: darkCodeTheme,
-        },
+        // prism: {
+        //     theme: lightCodeTheme,
+        //     darkTheme: darkCodeTheme,
+        // },
     },
 };
 module.exports = config;
