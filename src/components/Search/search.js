@@ -86,11 +86,11 @@ export function SearchComponent() {
 
     return (
         <div className={"search-component"}>
-            {/*<h3>Stand Alone Search component</h3>*/}
+            <h3>Icon explorer</h3>
             <input type="text" id="message" name="message" onChange={handleChange} value={search}
                    autoComplete="off"/>
-            <button onClick={handleClick}>Click</button>
-            <h3>Search results will appear below</h3>
+            <button onClick={handleClick}>Search</button><h1/>
+            <h4>Search results will appear below</h4>
             <ul className={"icons-result"}>{iconsResult}</ul>
         </div>
     )

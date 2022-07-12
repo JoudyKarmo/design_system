@@ -124,7 +124,7 @@ message='Descriptive Message Text for this Error'
 * Be clear and conversational by thinking about how you might explain a technical error to your non-technical friends.
 
 
-## Accessibility
+### Accessibility
 
 <div class="text">
 Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum.
@@ -146,7 +146,7 @@ leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur 
 dapibus ac facilisis in, egestas eget quam.
 </div>
 
-## Related
+### Related
 
 <div class="text">
 

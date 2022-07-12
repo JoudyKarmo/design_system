@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 import Information from '/static/img/icon/information.svg';
+// import '@fontsource/roboto/700-italic.css';
 
 const FeatureList = [
         {
@@ -16,6 +17,11 @@ const FeatureList = [
 
             description: (
                 <div>
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+                        rel="stylesheet"
+                    />
+
                     <div className={styles.titleContainer}>
                         <h2 className={styles.text}>
                             <a href="./docs/tutorial/all-about-one-usu">The USU Design system</a>
@@ -26,7 +32,7 @@ const FeatureList = [
                     </div>
 
                     <div className={styles.square}>
-                        <Information/>
+                        <img className={styles.info} src={require('@site/static/img/information.png').default}/>
                         <span className={styles.header}>
                     Learn about the USU Design System, how to use it, the USU Ecosystem and get all information about the releases.
                     </span>
@@ -47,14 +53,16 @@ const FeatureList = [
                     Find all the basics informations and requirement for building successful software products.
                     </span>
                     </div>
-                    <div>
+
+
+                    <div className={styles.titleContainer}>
+                        <h2 className={styles.text}>
+                            <a href="./docs/content/">Content</a>
+                        </h2>
                         <a className={styles.explore}
                            href={"https://www.usu.com/en-us/"}> Explore all ➔
                         </a>
                     </div>
-
-                    <h2 className={styles.title}>
-                        <a href="./docs/content/">Content</a></h2>
                     <div className={styles.square}>
                         <img className={styles.info} src={require('@site/static/img/icon-catalog.png').default}/>
                         <span className={styles.header}>
@@ -62,14 +70,14 @@ const FeatureList = [
                     </span>
                     </div>
 
-                    <div>
+                    <div className={styles.titleContainer}>
+                        <h2 className={styles.text}>
+                            <a href="./docs/components/Accordion">Components</a>
+                        </h2>
                         <a className={styles.explore}
                            href={"https://www.usu.com/en-us/"}> Explore all ➔
                         </a>
                     </div>
-
-                    <h2 className={styles.title}>
-                        <a href="./docs/components/Accordion">Components</a></h2>
                     <div className={styles.square}>
                         <img className={styles.info} src={require('@site/static/img/puzzle.png').default}/>
                         <span className={styles.header}>
@@ -77,28 +85,30 @@ const FeatureList = [
                     </span>
                     </div>
 
-                    <div>
+                    <div className={styles.titleContainer}>
+                        <h2 className={styles.text}>
+                            <a href="./docs/patterns/messaging">Patterns</a>
+                        </h2>
                         <a className={styles.explore}
                            href={"https://www.usu.com/en-us/"}> Explore all ➔
                         </a>
                     </div>
 
-                    <h2 className={styles.title}>
-                        <a href="./docs/patterns/messaging">Patterns</a></h2>
                     <div className={styles.square}>
                         <img className={styles.info} src={require('@site/static/img/wireframe.png').default}/>
                         <span className={styles.header}>
-For each component you get building instructions and the code, as well as what they can be used for, which rules to respect and how to consider accessibility.
+                        For each component you get building instructions and the code, as well as what they can be used for, which rules to respect and how to consider accessibility.
                     </span>
                     </div>
 
-                    <div className={styles.explore}>
-                        <a
-                            href={"https://www.usu.com/en-us/"}> Explore all ➔
+                    <div className={styles.titleContainer}>
+                        <h2 className={styles.title}>
+                            <a href="./docs/resources/icon-library">Resources</a>
+                        </h2>
+                        <a className={styles.explore}
+                           href={"https://www.usu.com/en-us/"}> Explore all ➔
                         </a>
                     </div>
-                    <h2 className={styles.title}>
-                        <a href="./docs/resources/icon-library">Resources</a></h2>
                     <div className={styles.square}>
                         <img className={styles.info} src={require('@site/static/img/random.png').default}/>
                         <span className={styles.header}>
@@ -106,14 +116,17 @@ For each component you get building instructions and the code, as well as what t
                     </span>
                     </div>
                 </div>
-                // </div>
             ),
         },
     ]
 ;
 
 //Feature Structur
-function Feature({title, description}) {
+function Feature(
+    {
+        title, description
+    }
+) {
     return (
         <div className={clsx('col col--9')}>
             <div className="text--center">

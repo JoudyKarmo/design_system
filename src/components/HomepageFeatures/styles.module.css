@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*@font-face {*/
+/*    font-family: "Roboto";*/
+/*    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");*/
+/*}*/
 .features {
-    /*display: block;*/
-    /*align-items: start;*/
     padding: 2rem 0 2rem 20%;
-    /*width: 80%;*/
+    font-family: "Roboto";
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /*padding: 2rem 0;*/
+    /*height: 1600px;*/
     /*color: #004f9f;*/
-    height: 1600px;
     /*text-indent: 0px;*/
     /*text-align: left;*/
     /*opacity: 0;*/
@@ -14,6 +22,7 @@
     text-indent: 0px;
     text-align: left;
     width: 170%;
+    font-family: "Roboto";
 }
 
 .title {
@@ -22,12 +31,15 @@
     width: 100%;
     color: #004f9f;
     padding-left: 15px;
+    font-family: "Roboto";
 }
 
-.titleContainer{
+.titleContainer {
     display: flex;
     justify-content: space-between;
+    font-family: "Roboto";
 }
+
 /*flex-grow: 1;*/
 /*flex-shrink: 0;*/
 /*display: flex*/
@@ -35,12 +47,14 @@
 
 .explore {
     font-weight: 700;
+    font-family: "Roboto";
+    /*float: right;*/
     /*padding-left: 400px;*/
-    float: right;
     flex-grow: 1;
     flex-shrink: 0;
 }
-.menu__link a:hover{
+
+.menu__link a:hover {
     color: #00a400;
 }
 
@@ -59,6 +73,9 @@
     line-height: 1.26;
     letter-spacing: 0.22px;
     color: #333;
+    font-family: 'Roboto', sans-serif;
+    text-indent: each-line;
+    max-resolution: 0px;
 }
 
 .square {
@@ -71,10 +88,13 @@
     border-radius: 6px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    font-family: Roboto;
+    text-align: justify;
 }
 
 .heading {
     font-size: 2px;
+    font-family: "Roboto";
 }
 
 .main {
